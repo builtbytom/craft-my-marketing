@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pink: #FF0066;
+  --pink-dark: #CC0052;
+  --pink-light: #FFE5F1;
+  --purple: #8B00FF;
+  --purple-dark: #6B00CC;
+  --purple-light: #F0E5FF;
+  --black: #000000;
+  --white: #FFFFFF;
+  --gray-light: #F8F8F8;
+  --accent: #00E5CC;
+  --blue: #FF0066;
+}
+
+.nav-shadow {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.text-pink { color: var(--pink); }
+.text-pink-dark { color: var(--pink-dark); }
+.text-purple { color: var(--purple); }
+.text-purple-dark { color: var(--purple-dark); }
+.text-black { color: var(--black); }
+.text-white { color: var(--white); }
+.text-accent { color: var(--accent); }
+.bg-pink { background-color: var(--pink); }
+.bg-pink-dark { background-color: var(--pink-dark); }
+.bg-pink-light { background-color: var(--pink-light); }
+.bg-purple { background-color: var(--purple); }
+.bg-purple-dark { background-color: var(--purple-dark); }
+.bg-purple-light { background-color: var(--purple-light); }
+.bg-black { background-color: var(--black); }
+.bg-white { background-color: var(--white); }
+.bg-gray-light { background-color: var(--gray-light); }
+.bg-accent { background-color: var(--accent); }
+.bg-blue { background-color: var(--blue); }
+.text-blue { color: var(--blue); }
+.border-pink { border-color: var(--pink); }
+.border-purple { border-color: var(--purple); }
+.border-black { border-color: var(--black); }
+.border-accent { border-color: var(--accent); }
+.border-blue { border-color: var(--blue); }
+
+/* Hover states for custom colors */
+.hover\:bg-purple:hover { background-color: var(--purple) !important; }
+.hover\:bg-purple-dark:hover { background-color: var(--purple-dark) !important; }
+.hover\:text-purple:hover { color: var(--purple) !important; }
+.hover\:text-white:hover { color: var(--white) !important; }

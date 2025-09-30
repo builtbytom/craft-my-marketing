@@ -1,0 +1,48 @@
+{
+  "sectionTitle": "The digital team you hire once, then keep forever",
+  "sectionSubtitle": "We start where you are, grow with your business, and build what you actually need.",
+  "pillars": [
+    {
+      "title": "Getting Started",
+      "icon": "foundation",
+      "description": "Lightning-fast websites built for AI and mobile. Perfect for new businesses or established ones ready for a real web presence.",
+      "features": [
+        "Mobile-first, AI-ready design",
+        "Loads in under 1.2 seconds",
+        "Built-in SEO optimization",
+        "Contact management included",
+        "Future-proofed technology"
+      ],
+      "linkText": "See Website Services",
+      "linkUrl": "/services/websites"
+    },
+    {
+      "title": "Gaining Momentum",
+      "icon": "operations",
+      "description": "Smart automation when you're tired of doing the same tasks. System integrations when you outgrow spreadsheets.",
+      "features": [
+        "Workflow automation that works",
+        "System integrations",
+        "Time-saving tools",
+        "Process optimization",
+        "Manual task elimination"
+      ],
+      "linkText": "See Automation Solutions",
+      "linkUrl": "/services/technology"
+    },
+    {
+      "title": "Going Custom",
+      "icon": "solutions",
+      "description": "Custom apps and tools built exactly for your workflow. Solutions that don't exist anywhere else, tailored to your business.",
+      "features": [
+        "Custom applications",
+        "Unique business tools",
+        "Competitive advantages",
+        "Scalable solutions",
+        "Ongoing development"
+      ],
+      "linkText": "See Custom Development",
+      "linkUrl": "/services/technology"
+    }
+  ]
+}

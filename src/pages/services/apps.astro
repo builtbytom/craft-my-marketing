@@ -1,0 +1,419 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Custom App Development - Build vs Buy Analysis | Craft My Marketing">
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center overflow-hidden bg-white">
+    <!-- Animated Background -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(#8B00FF 1px, transparent 1px), linear-gradient(90deg, #8B00FF 1px, transparent 1px); background-size: 50px 50px; animation: grid-move 20s linear infinite;"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple/20 rounded-full filter blur-3xl animate-blob"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/15 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+      </div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16 py-20">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-8">
+          <div class="inline-flex items-center gap-3 mb-10">
+            <div class="w-2 h-2 bg-accent"></div>
+            <span class="text-xs font-black text-black uppercase tracking-[0.2em]">CUSTOM APP DEVELOPMENT</span>
+          </div>
+
+          <h1 class="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-display font-black leading-[0.85] tracking-[-0.03em] mb-10">
+            <span class="text-black">BUILD IT</span>
+            <br/>
+            <span class="text-purple">OR BUY IT?</span>
+            <br/>
+            <span class="text-black">WE'LL TELL YOU</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-black/60 mb-16 max-w-2xl leading-relaxed font-bold">
+            60% of the time, we recommend existing tools. 40% of the time, we build custom. Either way, you win because we only build what actually solves your problem.
+          </p>
+
+          <div class="flex flex-wrap gap-6">
+            <a href="#discovery" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+              START DISCOVERY
+              <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+            <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 font-black text-lg tracking-wider text-black bg-transparent border-4 border-black hover:bg-black hover:text-white transition-all duration-300">
+              BOOK A CALL
+            </a>
+          </div>
+        </div>
+
+        <!-- Honest Stats -->
+        <div class="lg:col-span-4 relative">
+          <div class="bg-purple text-white p-8 rounded-2xl shadow-2xl">
+            <div class="text-center mb-6">
+              <div class="text-2xl font-black mb-2">OUR HONEST BREAKDOWN</div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Recommend Existing Tools</span>
+                <span class="text-xl font-black text-accent">60%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Build Custom Solutions</span>
+                <span class="text-xl font-black text-accent">40%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Wrong Recommendation</span>
+                <span class="text-xl font-black text-red-400">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Most Developers -->
+  <section class="py-24 bg-black text-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-white">WHY MOST DEVELOPERS</span>
+          <span class="text-red-400"> GIVE BAD ADVICE</span>
+        </h2>
+        <p class="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          They want to build. We want to solve. Big difference.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- The Problem -->
+        <div class="bg-red-500/10 p-8 rounded-2xl border border-red-500/20">
+          <h3 class="text-2xl font-black text-red-400 mb-6">MOST DEVELOPERS SAY:</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">❌</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"We can build that!"</h4>
+                <p class="text-white/70">Without asking if you should build it, or what it actually costs to maintain.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">❌</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"Custom is always better"</h4>
+                <p class="text-white/70">Because they get paid more for custom work, regardless of whether it's right for you.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">❌</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"It'll only take 3 months"</h4>
+                <p class="text-white/70">Then 6 months later, you're still waiting and your business is suffering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Approach -->
+        <div class="bg-accent/10 p-8 rounded-2xl border border-accent/20">
+          <h3 class="text-2xl font-black text-accent mb-6">WE ASK DIFFERENT QUESTIONS:</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">✅</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"What problem are you solving?"</h4>
+                <p class="text-white/70">Maybe there's a $49/month tool that does exactly what you need.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">✅</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"What's the true cost?"</h4>
+                <p class="text-white/70">Custom apps need updates, security patches, and ongoing maintenance forever.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-2xl">✅</div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">"Can you start making money today?"</h4>
+                <p class="text-white/70">Sometimes launching with an existing tool beats waiting 6 months for perfection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discovery Process -->
+  <section id="discovery" class="py-24 bg-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-black">OUR DISCOVERY</span>
+          <span class="text-purple"> PROCESS</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto">
+          We dig deep before we recommend anything. No cookie-cutter solutions.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8 mb-16">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple rounded-full flex items-center justify-center text-white font-black text-xl mb-6 mx-auto">1</div>
+          <h3 class="text-xl font-black mb-4">BUSINESS AUDIT</h3>
+          <p class="text-black/60">Current workflow analysis, pain point identification, and growth bottleneck assessment</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple rounded-full flex items-center justify-center text-white font-black text-xl mb-6 mx-auto">2</div>
+          <h3 class="text-xl font-black mb-4">MARKET RESEARCH</h3>
+          <p class="text-black/60">Comprehensive analysis of existing solutions, pricing, and feature comparisons</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple rounded-full flex items-center justify-center text-white font-black text-xl mb-6 mx-auto">3</div>
+          <h3 class="text-xl font-black mb-4">BUILD VS BUY</h3>
+          <p class="text-black/60">Honest cost-benefit analysis with 3-year projections and maintenance considerations</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple rounded-full flex items-center justify-center text-white font-black text-xl mb-6 mx-auto">4</div>
+          <h3 class="text-xl font-black mb-4">RECOMMENDATION</h3>
+          <p class="text-black/60">Clear path forward with specific tools, timelines, and investment requirements</p>
+        </div>
+      </div>
+
+      <!-- Real Examples -->
+      <div class="bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-2xl font-black text-center mb-8">RECENT DISCOVERY OUTCOMES</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl">
+            <div class="text-3xl mb-4 text-center">🏃‍♂️</div>
+            <h4 class="text-lg font-black mb-3">FITNESS COACH</h4>
+            <p class="text-black/70 text-sm mb-4">Wanted custom workout app. We recommended Trainerize + custom branding.</p>
+            <div class="text-xs font-bold text-accent">SAVED: $45,000 + 6 months</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl">
+            <div class="text-3xl mb-4 text-center">📦</div>
+            <h4 class="text-lg font-black mb-3">INVENTORY BUSINESS</h4>
+            <p class="text-black/70 text-sm mb-4">Complex multi-warehouse tracking. No existing tool could handle it.</p>
+            <div class="text-xs font-bold text-purple">BUILT: Custom solution, ROI in 8 months</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl">
+            <div class="text-3xl mb-4 text-center">🏠</div>
+            <h4 class="text-lg font-black mb-3">REAL ESTATE TEAM</h4>
+            <p class="text-black/70 text-sm mb-4">Wanted CRM integration. We connected 3 existing tools with automation.</p>
+            <div class="text-xs font-bold text-accent">HYBRID: $2,500 vs $25,000 custom build</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- When We Build Custom -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-black">WHEN WE RECOMMEND</span>
+          <span class="text-purple"> BUILDING CUSTOM</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl mb-4 text-center">🔒</div>
+          <h3 class="text-xl font-black mb-3 text-center">UNIQUE WORKFLOW</h3>
+          <p class="text-black/70 text-sm text-center">Your process is so specialized that no existing tool can handle it without major compromises</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl mb-4 text-center">💰</div>
+          <h3 class="text-xl font-black mb-3 text-center">CLEAR ROI</h3>
+          <p class="text-black/70 text-sm text-center">Custom solution pays for itself within 12 months through efficiency gains or new revenue</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl mb-4 text-center">🎯</div>
+          <h3 class="text-xl font-black mb-3 text-center">COMPETITIVE ADVANTAGE</h3>
+          <p class="text-black/70 text-sm text-center">The app becomes a core differentiator that competitors can't easily copy</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl mb-4 text-center">📈</div>
+          <h3 class="text-xl font-black mb-3 text-center">SCALE REQUIREMENT</h3>
+          <p class="text-black/70 text-sm text-center">Existing tools break down at your volume, or would cost more than custom development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of Apps We Build -->
+  <section class="py-24 bg-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-black">TYPES OF APPS</span>
+          <span class="text-purple"> WE BUILD</span>
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-12">
+        <!-- Internal Tools -->
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-black mb-6 text-purple">INTERNAL TOOLS</h3>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Custom dashboards and reporting</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Workflow automation tools</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Data migration and cleanup</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Inventory and resource management</span>
+            </li>
+          </ul>
+          <div class="text-sm text-purple font-bold">TYPICAL INVESTMENT: $5,000 - $25,000</div>
+        </div>
+
+        <!-- Customer-Facing Apps -->
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-black mb-6 text-purple">CUSTOMER APPS</h3>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Client portals and dashboards</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Booking and scheduling systems</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">E-commerce and payment processing</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Mobile apps (iOS/Android)</span>
+            </li>
+          </ul>
+          <div class="text-sm text-purple font-bold">TYPICAL INVESTMENT: $15,000 - $75,000</div>
+        </div>
+
+        <!-- Enterprise Solutions -->
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-black mb-6 text-purple">ENTERPRISE SOLUTIONS</h3>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Multi-location management systems</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">API integrations and data sync</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">Advanced analytics and AI features</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-accent rounded-full mt-3 flex-shrink-0"></div>
+              <span class="text-black/80">White-label solutions</span>
+            </li>
+          </ul>
+          <div class="text-sm text-purple font-bold">TYPICAL INVESTMENT: $50,000+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Development Process -->
+  <section class="py-24 bg-purple text-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-white">DEVELOPMENT</span>
+          <span class="text-accent"> PROCESS</span>
+        </h2>
+        <p class="text-xl text-white/80 max-w-3xl mx-auto">
+          Transparent, iterative development with constant client feedback
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">1</div>
+          <h3 class="text-xl font-black mb-4">WIREFRAMES</h3>
+          <p class="text-white/70">Detailed mockups and user flow mapping before any code is written</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">2</div>
+          <h3 class="text-xl font-black mb-4">MVP BUILD</h3>
+          <p class="text-white/70">Core functionality first, get you using it ASAP for feedback and iteration</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">3</div>
+          <h3 class="text-xl font-black mb-4">ITERATE</h3>
+          <p class="text-white/70">Weekly demos, constant feedback, rapid adjustments based on real usage</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">4</div>
+          <h3 class="text-xl font-black mb-4">POLISH</h3>
+          <p class="text-white/70">Final UI/UX refinement, security hardening, and performance optimization</p>
+        </div>
+      </div>
+
+      <!-- Technology Stack -->
+      <div class="mt-16 bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
+        <h3 class="text-2xl font-black text-center mb-8">OUR TECHNOLOGY STACK</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <h4 class="text-lg font-bold mb-4 text-accent">FRONTEND</h4>
+            <p class="text-white/80 text-sm">React, Next.js, TypeScript, Tailwind CSS for modern, responsive interfaces</p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-lg font-bold mb-4 text-accent">BACKEND</h4>
+            <p class="text-white/80 text-sm">Node.js, Python, PostgreSQL, Redis for scalable, secure server architecture</p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-lg font-bold mb-4 text-accent">INFRASTRUCTURE</h4>
+            <p class="text-white/80 text-sm">AWS, Vercel, Docker for reliable hosting and automatic scaling</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-black text-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16 text-center">
+      <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+        <span class="text-white">READY FOR HONEST</span>
+        <span class="text-accent"> ADVICE?</span>
+      </h2>
+      <p class="text-xl text-white/70 mb-12 max-w-2xl mx-auto">
+        Let's figure out if you need to build, buy, or integrate. No sales pitch, just straight talk about what makes sense for your business.
+      </p>
+      <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+        START DISCOVERY
+        <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+</Layout>

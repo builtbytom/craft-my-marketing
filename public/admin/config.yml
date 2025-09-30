@@ -1,0 +1,180 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "src/content/settings/general.json"
+        fields:
+          - {label: "Company Name", name: "companyName", widget: "string", default: "Craft My Marketing"}
+          - {label: "Tagline", name: "tagline", widget: "string", default: "Your Complete Digital Department"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Calendar Link", name: "calendarLink", widget: "string"}
+
+  - name: "homepage"
+    label: "Homepage"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "src/content/homepage/hero.json"
+        fields:
+          - {label: "Headline", name: "headline", widget: "string"}
+          - {label: "Subheadline", name: "subheadline", widget: "text"}
+          - {label: "CTA Text", name: "ctaText", widget: "string"}
+          - {label: "CTA Link", name: "ctaLink", widget: "string"}
+          - {label: "Secondary CTA Text", name: "secondaryCtaText", widget: "string"}
+          - {label: "Secondary CTA Link", name: "secondaryCtaLink", widget: "string"}
+      
+      - name: "pillars"
+        label: "Three Pillars Section"
+        file: "src/content/homepage/pillars.json"
+        fields:
+          - {label: "Section Title", name: "sectionTitle", widget: "string"}
+          - {label: "Section Subtitle", name: "sectionSubtitle", widget: "text"}
+          - label: "Pillars"
+            name: "pillars"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Features", name: "features", widget: "list"}
+              - {label: "Link Text", name: "linkText", widget: "string"}
+              - {label: "Link URL", name: "linkUrl", widget: "string"}
+      
+      - name: "process"
+        label: "Process Section"
+        file: "src/content/homepage/process.json"
+        fields:
+          - {label: "Section Title", name: "sectionTitle", widget: "string"}
+          - {label: "Section Subtitle", name: "sectionSubtitle", widget: "text"}
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - {label: "Week", name: "week", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+      
+      - name: "trust"
+        label: "Trust Signals"
+        file: "src/content/homepage/trust.json"
+        fields:
+          - {label: "Years Experience", name: "yearsExperience", widget: "string"}
+          - {label: "Projects Completed", name: "projectsCompleted", widget: "string"}
+          - {label: "Response Time", name: "responseTime", widget: "string"}
+          - {label: "Connecticut Focused", name: "ctFocused", widget: "boolean"}
+
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Tagline", name: "tagline", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Timeline", name: "timeline", widget: "string"}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Feature", name: "feature", widget: "string"}
+      - label: "Packages"
+        name: "packages"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Price", name: "price", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Features", name: "features", widget: "list"}
+
+  - name: "team"
+    label: "Team Members"
+    folder: "src/content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Photo", name: "photo", widget: "image", required: false}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Phone", name: "phone", widget: "string", required: false}
+      - {label: "Order", name: "order", widget: "number"}
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Client Name", name: "clientName", widget: "string"}
+      - {label: "Business", name: "business", widget: "string"}
+      - {label: "Role", name: "role", widget: "string", required: false}
+      - {label: "Quote", name: "quote", widget: "text"}
+      - {label: "Service Used", name: "service", widget: "string"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "case_studies"
+    label: "Case Studies"
+    folder: "src/content/case-studies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Industry", name: "industry", widget: "string"}
+      - {label: "Services Used", name: "services", widget: "list"}
+      - {label: "Challenge", name: "challenge", widget: "markdown"}
+      - {label: "Solution", name: "solution", widget: "markdown"}
+      - {label: "Results", name: "results", widget: "markdown"}
+      - {label: "Before Image", name: "beforeImage", widget: "image", required: false}
+      - {label: "After Image", name: "afterImage", widget: "image", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "faq"
+    label: "FAQ"
+    folder: "src/content/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Question", name: "question", widget: "string"}
+      - {label: "Answer", name: "answer", widget: "markdown"}
+      - {label: "Category", name: "category", widget: "select", options: ["General", "Websites", "Automation", "Apps", "Pricing", "Process"]}
+      - {label: "Order", name: "order", widget: "number"}
+
+  - name: "blog"
+    label: "Blog/Resources"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "relation", collection: "team", value_field: "name", search_fields: ["name"]}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO Description", name: "seoDescription", widget: "text"}

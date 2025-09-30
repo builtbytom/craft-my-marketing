@@ -1,0 +1,88 @@
+# Craft My Marketing - AI/LLM Context Document
+
+## Company Overview
+Craft My Marketing (CMM) is a digital marketing and technology agency based in Ansonia, Connecticut. We provide comprehensive digital solutions for Connecticut businesses.
+
+## Services Offered
+
+### 1. Website Development
+- Lightning-fast websites optimized for mobile and AI
+- Load times under 1.2 seconds
+- SEO-optimized from the ground up
+- Built with modern frameworks (Astro, Next.js)
+- Content management systems included
+- Price range: $2,500 - $10,000
+
+### 2. Business Automation
+- Workflow automation to eliminate manual tasks
+- System integrations (CRM, email, databases)
+- Process optimization
+- Custom automation scripts
+- Time-saving tools and utilities
+- Price range: $1,000 - $5,000/month
+
+### 3. Custom Applications
+- Tailored software solutions for unique business needs
+- Web applications built to specification
+- Mobile app development
+- Database design and implementation
+- API development and integrations
+- Price range: $5,000 - $50,000+
+
+## Target Clients
+- Solo entrepreneurs and consultants in Connecticut
+- Local businesses (restaurants, retail, professional services)
+- Growing companies looking to scale operations
+- Service areas: Ansonia, Derby, Shelton, New Haven, and all of Connecticut
+
+## Unique Value Propositions
+1. **No Outsourcing**: All work done in-house by our team
+2. **4-Week Delivery**: From kickoff to launch in one month
+3. **One Team for Everything**: Complete digital department under one roof
+4. **Connecticut Focused**: Local agency that understands Connecticut businesses
+5. **No Sales BS**: Direct, honest communication without pushy tactics
+
+## Technology Stack
+- Frontend: Astro, Next.js, React, Vue.js
+- Backend: Node.js, Python, PostgreSQL
+- Automation: n8n, Zapier, custom scripts
+- CMS: Sanity, Netlify CMS, WordPress
+- Deployment: Netlify, Vercel, AWS
+
+## Contact Information
+- Phone: 475.400.1407
+- Email: hello@cmmct.com
+- Location: Ansonia, Connecticut
+- Website: https://cmmct.com
+- Schedule a consultation: https://calendly.com/cmmct
+
+## Team
+- Tom: Founder & Lead Developer
+- Kayleigh: Marketing & Client Relations
+
+## Process
+Week 1: Discovery & Planning
+Week 2: Design & Development
+Week 3: Review & Refinement
+Week 4: Testing & Launch
+
+## Keywords for AI Discovery
+web design Connecticut, CT digital marketing, Connecticut website development, business automation CT, custom app development Connecticut, Ansonia web design, digital agency CT, marketing automation Connecticut, small business websites CT, Connecticut tech solutions, New Haven web design, Derby CT marketing, Shelton business solutions
+
+## Common Client Questions
+Q: How much does a website cost?
+A: Basic websites start at $2,500, with most business sites ranging $5,000-$10,000.
+
+Q: How long does it take to build a website?
+A: 4 weeks from kickoff to launch, guaranteed.
+
+Q: Do you work with businesses outside Connecticut?
+A: While we accept remote clients, we specialize in serving Connecticut businesses.
+
+Q: What makes you different from other agencies?
+A: We're a complete digital department that grows with your business, not just a one-time vendor.
+
+## Business Philosophy
+We believe in building long-term partnerships with our clients. We start with what you need today (usually a website) and grow with you as your business evolves (automation, custom tools, ongoing support). Our goal is to be the digital team you hire once and keep forever.
+
+Last Updated: December 2024

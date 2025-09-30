@@ -1,0 +1,24 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  canonical?: string;
+  jsonLd?: any;
+}
+
+const {
+  title,
+  description = "Craft My Marketing - Your Complete Digital Department for Websites, Automation, and Custom Solutions in Connecticut",
+  keywords = "web design Connecticut, CT digital marketing, business automation, custom app development, Ansonia web design",
+  ogImage = "/og-image.jpg",
+  canonical = Astro.url.href,
+  jsonLd
+} = Astro.props;
+---
+
+<!-- This component can be used for page-specific SEO overrides -->
+{jsonLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+)}

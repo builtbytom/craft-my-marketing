@@ -1,0 +1,1890 @@
+---
+import Layout from '../layouts/Layout.astro';
+import heroData from '../content/homepage/hero.json';
+import pillarsData from '../content/homepage/pillars.json';
+---
+
+<Layout title="Craft My Marketing - Your Complete Digital Department">
+  <!-- Hero Section - Bold Asymmetric Design -->
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-white">
+    <!-- Animated Background -->
+    <div class="absolute inset-0">
+      <!-- Morphing Grid Pattern -->
+      <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(#8B00FF 1px, transparent 1px), linear-gradient(90deg, #8B00FF 1px, transparent 1px); background-size: 50px 50px; animation: grid-move 20s linear infinite;"></div>
+      
+      <!-- Animated Mesh Gradient -->
+      <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple/20 rounded-full filter blur-3xl animate-blob"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/15 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-blue/20 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
+      </div>
+      
+      <!-- Wave Pattern -->
+      <svg class="absolute bottom-0 left-0 w-full h-32 opacity-5" preserveAspectRatio="none" viewBox="0 0 1440 320">
+        <path fill="#8B00FF" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" class="animate-wave"></path>
+      </svg>
+    </div>
+    
+    <!-- Geometric Accent Shapes -->
+    <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-purple opacity-[0.02] transform rotate-45 translate-x-64 animate-float-slow"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent opacity-[0.02] transform -rotate-12 -translate-x-48 animate-float-slow-delayed"></div>
+
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16 py-20">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <!-- Left Column - Main Content -->
+        <div class="lg:col-span-8">
+          <!-- Small Badge -->
+          <div class="inline-flex items-center gap-3 mb-10">
+            <div class="w-2 h-2 bg-accent"></div>
+            <span class="text-xs font-black text-black uppercase tracking-[0.2em]">CONNECTICUT DIGITAL AGENCY</span>
+          </div>
+
+          <!-- Massive Headline -->
+          <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7rem] font-display font-black leading-[0.85] tracking-[-0.03em] mb-10">
+            <span class="text-black">WE START WITH</span>
+            <br/>
+            <span class="text-purple">WEBSITES, BUT</span>
+            <br/>
+            <span class="text-purple">BUILD WHATEVER</span>
+            <br/>
+            <span class="text-black">YOU NEED</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg md:text-xl text-black/60 mb-16 max-w-xl leading-relaxed font-bold">
+            Lightning-fast websites built for AI and mobile. Automation that actually works. Custom solutions when you're ready. One team for everything.
+          </p>
+
+          <!-- Staggered CTAs -->
+          <div class="space-y-6">
+            <div>
+              <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+                BOOK A CALL (15 MIN, NO SALES BS)
+                <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="ml-12">
+              <a href="#services" class="inline-flex items-center justify-center px-12 py-6 font-black text-lg tracking-wider text-black bg-transparent border-4 border-black hover:bg-black hover:text-white transition-all duration-300">
+                EXPLORE SERVICES
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Supporting Stats -->
+        <div class="lg:col-span-4 relative hidden lg:block">
+          <div class="absolute bottom-0 right-0 space-y-4">
+            <div class="bg-purple text-white p-6 transform hover:scale-105 transition-transform duration-300 opacity-0 animate-slide-in-1">
+              <div class="text-3xl font-black">50+</div>
+              <div class="text-xs uppercase tracking-[0.15em] opacity-90">PROJECTS LAUNCHED WITHOUT DRAMA</div>
+            </div>
+            <div class="bg-accent text-black p-6 ml-8 transform hover:scale-105 transition-transform duration-300 opacity-0 animate-slide-in-2">
+              <div class="text-3xl font-black">4</div>
+              <div class="text-xs uppercase tracking-[0.15em]">WEEKS FROM KICKOFF TO LAUNCH (SERIOUSLY)</div>
+            </div>
+            <div class="bg-blue text-white p-6 ml-16 transform hover:scale-105 transition-transform duration-300 opacity-0 animate-slide-in-3">
+              <div class="text-3xl font-black">0</div>
+              <div class="text-xs uppercase tracking-[0.15em]">OUTSOURCING. NO EXCUSES.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO We Serve Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">WHO WE SERVE</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-display font-black leading-[0.9] mt-6 mb-8">
+          <span class="text-black">WE HELP ALL KINDS</span>
+          <br/>
+          <span class="text-purple">OF BUSINESSES</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto leading-relaxed">
+          From solopreneurs to growing companies, we work with businesses that want to do things better.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Solo Entrepreneurs -->
+        <div class="bg-white p-8 border-4 border-purple hover:shadow-2xl transition-all duration-300 group">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-purple text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-black text-purple mb-2">Solo Entrepreneurs</h3>
+          </div>
+          <ul class="space-y-3 text-black/80 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-purple font-black text-lg">•</span>
+              <span>Consultants and freelancers</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-purple font-black text-lg">•</span>
+              <span>Service-based professionals</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-purple font-black text-lg">•</span>
+              <span>Need professional online presence</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-purple font-black text-lg">•</span>
+              <span>Want to focus on their expertise</span>
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-gray-200">
+            <p class="text-purple font-bold text-sm">Examples: Coaches, designers, accountants, therapists</p>
+          </div>
+        </div>
+
+        <!-- Local Businesses -->
+        <div class="bg-white p-8 border-4 border-accent hover:shadow-2xl transition-all duration-300 group">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-accent text-black rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-black text-accent mb-2">Local Businesses</h3>
+          </div>
+          <ul class="space-y-3 text-black/80 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-accent font-black text-lg">•</span>
+              <span>Restaurants and retail shops</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent font-black text-lg">•</span>
+              <span>Professional services</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent font-black text-lg">•</span>
+              <span>Want to streamline operations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent font-black text-lg">•</span>
+              <span>Need better customer experience</span>
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-gray-200">
+            <p class="text-accent font-bold text-sm">Examples: Law firms, medical practices, contractors, restaurants</p>
+          </div>
+        </div>
+
+        <!-- Growing Companies -->
+        <div class="bg-white p-8 border-4 border-pink hover:shadow-2xl transition-all duration-300 group md:col-span-2 lg:col-span-1">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-pink text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-black text-pink mb-2">Growing Companies</h3>
+          </div>
+          <ul class="space-y-3 text-black/80 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-pink font-black text-lg">•</span>
+              <span>Scaling their operations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink font-black text-lg">•</span>
+              <span>Too much manual work</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink font-black text-lg">•</span>
+              <span>Need systems that grow with them</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink font-black text-lg">•</span>
+              <span>Want competitive advantages</span>
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-gray-200">
+            <p class="text-pink font-bold text-sm">Examples: E-commerce brands, SaaS companies, manufacturing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Approach -->
+      <div class="mt-16 bg-purple/10 p-8 md:p-12 rounded-2xl border border-purple/20">
+        <div class="text-center">
+          <h3 class="text-2xl md:text-3xl font-black mb-4 text-purple">Our Approach</h3>
+          <p class="text-xl text-black/70 leading-relaxed max-w-3xl mx-auto">
+            We believe every business deserves technology that works for them, not against them. Whether you're just starting out or scaling up, we'll meet you where you are and help you get where you want to go.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Pillars - Angular Design -->
+  <section id="services" class="py-32 bg-white relative overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <!-- Section Header -->
+      <div class="mb-20">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">HOW WE GROW WITH YOU</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-black leading-[0.9]">
+          THE DIGITAL TEAM
+          <br/>
+          <span class="text-purple">YOU HIRE ONCE,</span>
+          <br/>
+          <span class="text-purple">THEN KEEP FOREVER</span>
+        </h2>
+      </div>
+
+      <!-- Three Pillars - Vibrant Cards -->
+      <div class="grid md:grid-cols-3 gap-8 items-stretch">
+        <!-- Websites Card - PURPLE -->
+        <div class="group relative overflow-hidden bg-purple text-white p-10 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 transform rotate-45 -mr-16 -mt-16"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-white mb-8">
+              <svg class="w-8 h-8 text-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase tracking-tight">Getting Started</h3>
+            <p class="text-white/90 mb-8">
+              Lightning-fast websites built for AI and mobile. Perfect for new businesses or established ones ready for a real web presence.
+            </p>
+            <ul class="space-y-3 text-sm text-white/80 mb-8">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Mobile-first, AI-ready design
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Loads in under 1.2 seconds
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Future-proofed technology
+              </li>
+            </ul>
+            <a href="/services/websites" class="inline-flex items-center text-white font-black uppercase tracking-wider hover:translate-x-2 transition-all">
+              Learn more 
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation Card - LIME -->
+        <div class="group relative overflow-hidden bg-accent text-black p-10 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-black opacity-10 transform rotate-45 -mr-16 -mt-16"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-black mb-8">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-black mb-4 uppercase tracking-tight">Gaining Momentum</h3>
+            <p class="text-black/80 mb-8">
+              Smart automation when you're tired of doing the same tasks. System integrations when you outgrow spreadsheets.
+            </p>
+            <ul class="space-y-3 text-sm text-black/70 mb-8">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-black mr-3"></div>
+                Workflow automation that works
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-black mr-3"></div>
+                System integrations
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-black mr-3"></div>
+                Manual task elimination
+              </li>
+            </ul>
+            <a href="/services/technology" class="inline-flex items-center text-black font-black uppercase tracking-wider hover:translate-x-2 transition-all">
+              Learn more 
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Apps Card - PINK -->
+        <div class="group relative overflow-hidden bg-blue text-white p-10 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 transform rotate-45 -mr-16 -mt-16"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-white mb-8">
+              <svg class="w-8 h-8 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase tracking-tight">Going Custom</h3>
+            <p class="text-white/90 mb-8">
+              Custom apps and tools built exactly for your workflow. Solutions that don't exist anywhere else, tailored to your business.
+            </p>
+            <ul class="space-y-3 text-sm text-white/80 mb-8">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Custom applications
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Competitive advantages
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-white mr-3"></div>
+                Scalable solutions
+              </li>
+            </ul>
+            <a href="/services/technology" class="inline-flex items-center text-white font-black uppercase tracking-wider hover:translate-x-2 transition-all">
+              Learn more 
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Automation Showcase -->
+  <section class="py-32 bg-white relative overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-20">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">AUTOMATION IN ACTION</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-black leading-[0.9]">
+          REAL BUSINESSES.
+          <br/>
+          <span class="text-purple">REAL AUTOMATION.</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto mt-8">
+          Pick your industry and watch how automation transforms a typical day. See exactly how you save time and never miss opportunities.
+        </p>
+      </div>
+
+      <!-- Alpine.js Interactive Component -->
+      <div x-data="automationSimulator()" x-init="init()" class="relative">
+        <!-- Business Type Selector -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <template x-for="business in businesses" :key="business.id">
+            <button
+              @click="selectBusiness(business)"
+              :class="selectedBusiness.id === business.id ? 'bg-purple text-white shadow-xl scale-105' : 'bg-white text-black border-2 border-gray-200 hover:border-purple'"
+              class="px-8 py-4 rounded-xl font-black text-lg tracking-wider transition-all duration-300"
+            >
+              <span class="text-3xl mr-3" x-text="business.icon"></span>
+              <span x-text="business.name"></span>
+            </button>
+          </template>
+        </div>
+
+        <!-- Simulation Container -->
+        <div class="relative bg-gray-light rounded-3xl shadow-2xl p-8 lg:p-16 border border-gray-100">
+          <!-- Progress Steps (Desktop) -->
+          <div class="hidden sm:flex justify-between items-center mb-16 max-w-6xl mx-auto relative">
+            <template x-for="(step, index) in steps" :key="step.id">
+              <div
+                :class="(index <= currentStep && isRunning) ? 'opacity-100 scale-100' : 'opacity-30 scale-90'"
+                class="flex flex-col items-center transition-all duration-500 z-10"
+              >
+                <div 
+                  :class="{
+                    'bg-purple text-white shadow-2xl animate-pulse': index === currentStep && isRunning,
+                    'bg-accent text-black': index < currentStep && isRunning,
+                    'bg-gray-200': !(index <= currentStep && isRunning)
+                  }"
+                  class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mb-3 transition-all duration-500"
+                >
+                  <span x-text="step.icon"></span>
+                </div>
+                <span class="text-sm font-bold text-center max-w-[120px] uppercase tracking-wider" x-text="step.title"></span>
+              </div>
+            </template>
+          </div>
+
+          <!-- Progress Steps (Mobile) -->
+          <div class="sm:hidden mb-8">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-sm font-bold text-black">Step <span x-text="currentStep + 1"></span> of <span x-text="steps.length"></span></span>
+              <span class="text-sm text-black/60 font-bold uppercase tracking-wider" x-text="steps[currentStep]?.title"></span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div 
+                class="bg-purple h-3 rounded-full transition-all duration-500"
+                :style="`width: ${((currentStep + 1) / steps.length) * 100}%`"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Connection Line (Desktop only) -->
+          <div class="hidden sm:block absolute top-[120px] left-32 right-32 h-1 bg-gray-200 rounded-full">
+            <div 
+              class="h-full bg-purple transition-all duration-1000 ease-out rounded-full"
+              :style="`width: ${isRunning ? (currentStep / (steps.length - 1)) * 100 : 0}%`"
+            ></div>
+          </div>
+
+          <!-- Content Area -->
+          <div class="min-h-[400px] flex items-center justify-center">
+            <!-- Start Button -->
+            <div x-show="!isRunning && currentStep === 0" class="text-center">
+              <button
+                @click="runSimulation"
+                class="group px-16 py-8 bg-purple text-white font-black text-xl tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:scale-105"
+              >
+                <span class="flex items-center">
+                  <span class="text-4xl mr-6">⚡</span>
+                  WATCH AUTOMATION WORK
+                  <svg class="w-8 h-8 ml-6 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </button>
+              <p class="mt-6 text-lg font-bold text-black/70">
+                See how <span x-text="selectedBusiness.name"></span> saves <span x-text="selectedBusiness.timeSaved"></span> hours every week
+              </p>
+            </div>
+
+            <!-- Running Simulation -->
+            <div x-show="isRunning && !showFinalStats" class="w-full max-w-3xl mx-auto text-center">
+              <h3 class="font-black text-3xl text-black mb-6" x-text="steps[currentStep]?.title"></h3>
+              
+              <!-- Time Savings Badge -->
+              <div x-show="steps[currentStep]?.manualTime > 0" class="bg-accent/20 rounded-2xl p-6 mb-8 max-w-lg mx-auto">
+                <div class="flex items-center justify-center text-black">
+                  <svg class="w-6 h-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-black text-lg">
+                    Manual: <span x-text="steps[currentStep]?.manualTime"></span> min → Automated: 0 min
+                  </span>
+                </div>
+              </div>
+
+              <!-- Dynamic Content Based on Step -->
+              <div x-html="getStepContent()"></div>
+            </div>
+
+            <!-- Final Stats -->
+            <div x-show="showFinalStats" class="w-full animate-fade-in">
+              <div class="text-center">
+                <div class="text-6xl mb-8">🎉</div>
+                <h3 class="font-black text-4xl text-black mb-12">
+                  Here's What <span x-text="selectedBusiness.name"></span> Gets Back
+                </h3>
+                
+                <!-- Main Value Card -->
+                <div class="bg-gradient-to-r from-purple to-accent text-white rounded-2xl p-12 mb-16 max-w-4xl mx-auto shadow-2xl">
+                  <div class="text-6xl font-black mb-4">
+                    $<span x-text="selectedBusiness.dollarsRecovered.toLocaleString()"></span>/month
+                  </div>
+                  <div class="text-3xl font-bold">In New Revenue & Saved Time</div>
+                  <div class="text-xl mt-4 opacity-95">
+                    (<span x-text="selectedBusiness.timeSaved"></span> hours/week saved + no more missed opportunities)
+                  </div>
+                </div>
+                
+                <!-- Detailed Benefits -->
+                <div class="bg-white rounded-2xl p-12 max-w-5xl mx-auto mb-12 shadow-xl border border-gray-100">
+                  <div class="grid md:grid-cols-3 gap-12 mb-12">
+                    <div class="text-center">
+                      <div class="text-4xl font-black text-purple mb-3">
+                        <span x-text="selectedBusiness.cashFlow"></span>
+                      </div>
+                      <div class="text-base text-black font-bold uppercase tracking-wider">Cash Flow Impact</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-4xl font-black text-black mb-3">
+                        <span x-text="selectedBusiness.growth"></span>
+                      </div>
+                      <div class="text-base text-black font-bold uppercase tracking-wider">Business Growth</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-5xl font-black text-accent mb-3">24/7</div>
+                      <div class="text-base text-black font-bold uppercase tracking-wider">Always Working</div>
+                    </div>
+                  </div>
+                  
+                  <!-- What They Can Do Now -->
+                  <div class="text-left space-y-4 text-xl">
+                    <p class="font-black mb-6 text-2xl">With that time back, they can:</p>
+                    <ul class="space-y-3 text-black font-medium">
+                      <li class="flex items-start">
+                        <span class="text-purple font-black mr-3">•</span>
+                        <span x-text="selectedBusiness.benefit1"></span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-purple font-black mr-3">•</span>
+                        <span x-text="selectedBusiness.benefit2"></span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-purple font-black mr-3">•</span>
+                        <span x-text="selectedBusiness.benefit3"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                  <button
+                    @click="resetSimulation"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-black text-white font-black tracking-wider hover:bg-gray-800 transition-all"
+                  >
+                    <svg class="w-6 h-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Try Another Business
+                  </button>
+                  <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-purple text-white font-black tracking-wider hover:bg-purple-dark transition-all">
+                    Get This for Your Business
+                    <svg class="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Note -->
+        <div class="text-center mt-12">
+          <p class="text-black/60 text-lg max-w-3xl mx-auto font-medium">
+            <span x-text="selectedBusiness.name"></span> was losing <span class="font-black text-purple" x-text="selectedBusiness.missedOpportunity"></span>. 
+            Now everything happens automatically, 24/7.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-32 bg-gray-light relative overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <!-- Section Header -->
+      <div class="mb-20 text-center">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">OUR WORK</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-black leading-[0.9]">
+          REAL SITES.
+          <br/>
+          <span class="text-purple">REAL RESULTS.</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto mt-8">
+          From professional services to e-commerce, creative portfolios to hospitality — we build sites that work for every industry.
+        </p>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid md:grid-cols-2 gap-12 mb-16 items-stretch">
+        
+        <!-- Bookkeeping Project -->
+        <div class="group relative h-full">
+          <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 h-full flex flex-col">
+            <!-- Desktop + Mobile Mockups -->
+            <div class="relative mb-6">
+              <div class="flex gap-4 items-start">
+                <!-- Desktop Mockup -->
+                <div class="flex-1">
+                  <div class="bg-gray-800 rounded-t-lg p-3">
+                    <div class="flex space-x-2">
+                      <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div class="relative overflow-hidden rounded-b-lg">
+                    <img src="/images/portfolio/bookkeeping-ibuildcalm-desktop.webp" alt="Connecticut Professional Bookkeeping Services - Desktop" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Desktop</div>
+                </div>
+                
+                <!-- Mobile Mockup -->
+                <div class="w-24">
+                  <div class="bg-gray-800 rounded-t-lg p-2 relative">
+                    <div class="w-12 h-1 bg-gray-600 rounded-full mx-auto mb-2"></div>
+                    <div class="w-2 h-2 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <img src="/images/portfolio/bookkeeping-ibuildcalm-mobile.webp" alt="Connecticut Professional Bookkeeping Services - Mobile" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="bg-gray-800 rounded-b-lg p-2">
+                    <div class="w-8 h-1 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Mobile</div>
+                </div>
+              </div>
+              
+              <!-- Speed Badge -->
+              <div class="absolute top-4 left-4 w-20 h-16 bg-green-500/95 backdrop-blur-sm rounded-lg flex flex-col justify-center items-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                <div class="text-xs font-black text-white">SPEED</div>
+                <div class="text-lg font-black text-white">98</div>
+                <div class="text-xs text-white/80">Mobile</div>
+              </div>
+            </div>
+            <!-- Project Details -->
+            <div class="space-y-4 flex-1 flex flex-col">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-black text-black">Professional Services</h3>
+                <div class="flex items-center gap-2 text-sm text-purple font-bold">
+                  <div class="w-2 h-2 bg-purple rounded-full animate-pulse"></div>
+                  LIVE SITE
+                </div>
+              </div>
+              <p class="text-black/70 leading-relaxed">
+                Clean, trustworthy design for Connecticut's most reliable bookkeeping services. Built for conversions with clear CTAs and professional credibility.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-purple/10 text-purple text-sm font-bold rounded-full">Professional Services</span>
+                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-bold rounded-full">Lead Generation</span>
+                <span class="px-3 py-1 bg-blue/10 text-blue text-sm font-bold rounded-full">Local SEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amazon FBA SaaS Project -->
+        <div class="group relative h-full">
+          <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 h-full flex flex-col">
+            <!-- Desktop + Mobile Mockups -->
+            <div class="relative mb-6">
+              <div class="flex gap-4 items-start">
+                <!-- Desktop Mockup -->
+                <div class="flex-1">
+                  <div class="bg-gray-800 rounded-t-lg p-3">
+                    <div class="flex space-x-2">
+                      <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div class="relative overflow-hidden rounded-b-lg">
+                    <img src="/images/portfolio/buybox-ibuildcalm-desktop.webp" alt="Beyond The Buy Box - Amazon FBA Platform - Desktop" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Desktop</div>
+                </div>
+                
+                <!-- Mobile Mockup -->
+                <div class="w-24">
+                  <div class="bg-gray-800 rounded-t-lg p-2 relative">
+                    <div class="w-12 h-1 bg-gray-600 rounded-full mx-auto mb-2"></div>
+                    <div class="w-2 h-2 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <img src="/images/portfolio/buybox-ibuildcalm-mobile.webp" alt="Beyond The Buy Box - Amazon FBA Platform - Mobile" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="bg-gray-800 rounded-b-lg p-2">
+                    <div class="w-8 h-1 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Mobile</div>
+                </div>
+              </div>
+              
+              <!-- Stats Overlay -->
+              <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-lg p-3 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                <div class="text-xs font-black text-green-600 mb-1">CLIENT RESULTS</div>
+                <div class="text-lg font-black text-black">$47M+</div>
+                <div class="text-xs text-black/60">Revenue Generated</div>
+              </div>
+              
+              <!-- Speed Badge -->
+              <div class="absolute top-4 left-4 w-20 h-16 bg-green-500/95 backdrop-blur-sm rounded-lg flex flex-col justify-center items-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                <div class="text-xs font-black text-white">SPEED</div>
+                <div class="text-lg font-black text-white">1.2s</div>
+                <div class="text-xs text-white/80">Load</div>
+              </div>
+            </div>
+            <!-- Project Details -->
+            <div class="space-y-4 flex-1 flex flex-col">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-black text-black">SaaS Platform</h3>
+                <div class="flex items-center gap-2 text-sm text-purple font-bold">
+                  <div class="w-2 h-2 bg-purple rounded-full animate-pulse"></div>
+                  LIVE SITE
+                </div>
+              </div>
+              <p class="text-black/70 leading-relaxed">
+                High-converting SaaS landing page for Amazon FBA tools. Advanced animations, social proof, and conversion optimization drove massive results.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-purple/10 text-purple text-sm font-bold rounded-full">SaaS</span>
+                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-bold rounded-full">E-commerce Tools</span>
+                <span class="px-3 py-1 bg-blue/10 text-blue text-sm font-bold rounded-full">High-Converting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photography Portfolio -->
+        <div class="group relative h-full">
+          <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 h-full flex flex-col">
+            <!-- Desktop-Focused Layout -->
+            <div class="relative mb-6">
+              <div class="bg-gray-800 rounded-t-lg p-3">
+                <div class="flex space-x-2">
+                  <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+              </div>
+              <div class="relative overflow-hidden rounded-b-lg">
+                <img src="/images/portfolio/photography-ibuildcalm-desktop.webp" alt="Maya Chen Photography Portfolio" class="w-full h-auto" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Desktop-Focused Experience</div>
+              
+              <!-- Speed Badge -->
+              <div class="absolute top-4 left-4 w-20 h-16 bg-green-500/95 backdrop-blur-sm rounded-lg flex flex-col justify-center items-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                <div class="text-xs font-black text-white">SPEED</div>
+                <div class="text-lg font-black text-white">94</div>
+                <div class="text-xs text-white/80">Images</div>
+              </div>
+            </div>
+            <!-- Project Details -->
+            <div class="space-y-4 flex-1 flex flex-col">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-black text-black">Creative Portfolio</h3>
+                <div class="flex items-center gap-2 text-sm text-purple font-bold">
+                  <div class="w-2 h-2 bg-purple rounded-full animate-pulse"></div>
+                  LIVE SITE
+                </div>
+              </div>
+              <p class="text-black/70 leading-relaxed">
+                Elegant, artistic portfolio for professional photographer. Custom animations and image galleries showcase creative work beautifully.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-purple/10 text-purple text-sm font-bold rounded-full">Creative</span>
+                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-bold rounded-full">Portfolio</span>
+                <span class="px-3 py-1 bg-blue/10 text-blue text-sm font-bold rounded-full">Custom Animations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee Shop -->
+        <div class="group relative h-full">
+          <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 h-full flex flex-col">
+            <!-- Desktop + Mobile Mockups -->
+            <div class="relative mb-6">
+              <div class="flex gap-4 items-start">
+                <!-- Desktop Mockup -->
+                <div class="flex-1">
+                  <div class="bg-gray-800 rounded-t-lg p-3">
+                    <div class="flex space-x-2">
+                      <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div class="relative overflow-hidden rounded-b-lg">
+                    <img src="/images/portfolio/shoreline-ibuildcalm-desktop.webp" alt="Shoreline Coffee Shop - Desktop" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Desktop</div>
+                </div>
+                
+                <!-- Mobile Mockup -->
+                <div class="w-24">
+                  <div class="bg-gray-800 rounded-t-lg p-2 relative">
+                    <div class="w-12 h-1 bg-gray-600 rounded-full mx-auto mb-2"></div>
+                    <div class="w-2 h-2 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <img src="/images/portfolio/shorline-ibuildcalm-mobile.webp" alt="Shoreline Coffee Shop - Mobile" class="w-full h-auto" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div class="bg-gray-800 rounded-b-lg p-2">
+                    <div class="w-8 h-1 bg-gray-600 rounded-full mx-auto"></div>
+                  </div>
+                  <div class="text-center mt-2 text-xs text-black/40 font-bold uppercase tracking-wider">Mobile</div>
+                </div>
+              </div>
+              
+              <!-- Speed Badge -->
+              <div class="absolute top-4 left-4 w-20 h-16 bg-green-500/95 backdrop-blur-sm rounded-lg flex flex-col justify-center items-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                <div class="text-xs font-black text-white">SPEED</div>
+                <div class="text-lg font-black text-white">96</div>
+                <div class="text-xs text-white/80">Score</div>
+              </div>
+            </div>
+            <!-- Project Details -->
+            <div class="space-y-4 flex-1 flex flex-col">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-black text-black">Local Business</h3>
+                <div class="flex items-center gap-2 text-sm text-purple font-bold">
+                  <div class="w-2 h-2 bg-purple rounded-full animate-pulse"></div>
+                  LIVE SITE
+                </div>
+              </div>
+              <p class="text-black/70 leading-relaxed">
+                Premium coffee shop website with elegant typography and lifestyle branding. Perfect blend of warmth and sophistication.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-purple/10 text-purple text-sm font-bold rounded-full">Hospitality</span>
+                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-bold rounded-full">Local Business</span>
+                <span class="px-3 py-1 bg-blue/10 text-blue text-sm font-bold rounded-full">Brand Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center">
+        <div class="inline-flex items-center gap-4 mb-8">
+          <div class="text-black/60 font-bold">Ready to join them?</div>
+          <div class="h-px w-24 bg-purple/20"></div>
+        </div>
+        <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+          START YOUR PROJECT
+          <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Apps Discovery Section -->
+  <section class="py-32 bg-white relative overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-20">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">CUSTOM SOLUTIONS</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-black leading-[0.9]">
+          WE DON'T BUILD APPS
+          <br/>
+          <span class="text-purple">FOR THE SAKE OF BUILDING APPS</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-4xl mx-auto mt-8">
+          We dig into your specific business chaos and build exactly what fixes it. Sometimes that's a $50/month tool. Sometimes it's a custom app that saves $5,000/month. <strong>Our job is figuring out which is which.</strong>
+        </p>
+      </div>
+
+      <!-- Discovery Process Interactive -->
+      <div x-data="customAppsDemo()" x-init="init()" class="relative">
+        <!-- Business Type Selector -->
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+          <template x-for="business in businesses" :key="business.id">
+            <button
+              @click="selectBusiness(business)"
+              :class="selectedBusiness.id === business.id ? 'bg-purple text-white shadow-xl scale-105' : 'bg-white text-black border-2 border-gray-200 hover:border-purple'"
+              class="px-8 py-4 rounded-xl font-black text-lg tracking-wider transition-all duration-300"
+            >
+              <span class="text-3xl mr-3" x-text="business.icon"></span>
+              <span x-text="business.name"></span>
+            </button>
+          </template>
+        </div>
+
+        <!-- Three-Step Process -->
+        <div class="grid lg:grid-cols-3 gap-12 mb-16">
+          
+          <!-- Step 1: Current Chaos -->
+          <div class="relative">
+            <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-8 h-full">
+              <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">😵‍💫</span>
+                </div>
+                <h3 class="text-2xl font-black text-red-700 mb-2">CURRENT CHAOS</h3>
+                <p class="text-sm font-bold text-red-600 uppercase tracking-wider">What you're dealing with now</p>
+              </div>
+              
+              <div class="space-y-4" x-html="selectedBusiness.currentChaos"></div>
+            </div>
+          </div>
+
+          <!-- Step 2: Discovery Process -->
+          <div class="relative">
+            <div class="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-8 h-full">
+              <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">🔍</span>
+                </div>
+                <h3 class="text-2xl font-black text-yellow-700 mb-2">OUR DISCOVERY</h3>
+                <p class="text-sm font-bold text-yellow-600 uppercase tracking-wider">What we figure out together</p>
+              </div>
+              
+              <div class="space-y-3 text-sm text-yellow-800">
+                <div class="flex items-start">
+                  <span class="text-yellow-600 font-black mr-2">•</span>
+                  <span>Map your actual daily workflow</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-600 font-black mr-2">•</span>
+                  <span>Identify the biggest time drains</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-600 font-black mr-2">•</span>
+                  <span>Calculate real cost of current chaos</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-600 font-black mr-2">•</span>
+                  <span>Explore existing solutions first</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-600 font-black mr-2">•</span>
+                  <span>Design custom solution if needed</span>
+                </div>
+              </div>
+              
+              <div class="mt-6 p-4 bg-yellow-100 rounded-lg">
+                <p class="text-xs font-bold text-yellow-800 text-center">
+                  <span x-text="selectedBusiness.discoveryResult"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: The Solution -->
+          <div class="relative">
+            <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-8 h-full">
+              <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">✨</span>
+                </div>
+                <h3 class="text-2xl font-black text-green-700 mb-2">THE SOLUTION</h3>
+                <p class="text-sm font-bold text-green-600 uppercase tracking-wider" x-text="selectedBusiness.solutionType"></p>
+              </div>
+              
+              <!-- Solution Mockup -->
+              <div class="bg-white rounded-lg border-2 border-green-300 p-4 mb-4" x-html="selectedBusiness.solutionMockup"></div>
+              
+              <div class="text-center">
+                <div class="text-lg font-black text-green-700 mb-1" x-text="selectedBusiness.resultMetric"></div>
+                <div class="text-xs text-green-600" x-text="selectedBusiness.resultDescription"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Honest Bottom Message -->
+        <div class="text-center bg-gray-light p-12 rounded-2xl">
+          <h3 class="text-3xl font-black text-black mb-6">HERE'S THE TRUTH</h3>
+          <div class="max-w-4xl mx-auto space-y-6 text-xl text-black/80">
+            <p class="font-medium">
+              <strong>60% of the time</strong>, we recommend an existing tool or simple automation instead of building something custom.
+            </p>
+            <p class="font-medium">
+              <strong>40% of the time</strong>, we build exactly what you need because nothing else comes close.
+            </p>
+            <p class="font-black text-purple text-2xl mt-8">
+              Either way, you win. Because we only build what actually solves your problem.
+            </p>
+          </div>
+          
+          <div class="mt-12">
+            <a href="/contact" class="inline-flex items-center px-12 py-6 bg-purple text-white font-black text-xl tracking-wider hover:bg-purple-dark transition-all shadow-2xl">
+              Let's Figure Out Your Solution
+              <svg class="w-6 h-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <p class="text-sm text-black/60 mt-4 font-medium">Free discovery call • No pitch, just real talk about your chaos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process - Bold 2x2 Grid -->
+  <section class="py-32 bg-black relative overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="mb-20">
+        <span class="text-white/50 font-black uppercase tracking-[0.2em] text-xs">HOW WE WORK</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-white leading-[0.9]">
+          FOUR WEEKS.
+          <br/>
+          <span class="text-purple">REAL RESULTS.</span>
+        </h2>
+      </div>
+
+      <!-- 2x2 Grid of Weeks -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Week 1 - Purple -->
+        <div class="bg-purple text-white p-12 relative overflow-hidden group hover:scale-105 transition-all duration-300">
+          <div class="absolute top-4 right-4 text-[150px] font-black text-white/10 leading-none">1</div>
+          <div class="relative z-10">
+            <h3 class="text-sm font-black uppercase tracking-wider mb-4 opacity-80">WEEK ONE</h3>
+            <h4 class="text-3xl font-black mb-6">Figure Out What's Actually Broken</h4>
+            <ul class="space-y-2 text-white/90">
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Audit your current tech mess</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Spy on your competition (legally)</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Map out what actually needs fixing</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 2 - Lime -->
+        <div class="bg-accent text-black p-12 relative overflow-hidden group hover:scale-105 transition-all duration-300">
+          <div class="absolute top-4 right-4 text-[150px] font-black text-black/10 leading-none">2</div>
+          <div class="relative z-10">
+            <h3 class="text-sm font-black uppercase tracking-wider mb-4 opacity-60">WEEK TWO</h3>
+            <h4 class="text-3xl font-black mb-6">Build It Right the First Time</h4>
+            <ul class="space-y-2 text-black/80">
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Design something you'll actually love</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Create prototypes that make sense</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Get your feedback before we code</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 3 - Blue -->
+        <div class="bg-blue text-white p-12 relative overflow-hidden group hover:scale-105 transition-all duration-300">
+          <div class="absolute top-4 right-4 text-[150px] font-black text-white/10 leading-none">3</div>
+          <div class="relative z-10">
+            <h3 class="text-sm font-black uppercase tracking-wider mb-4 opacity-80">WEEK THREE</h3>
+            <h4 class="text-3xl font-black mb-6">Mobile-First Performance Testing</h4>
+            <ul class="space-y-2 text-white/90">
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Test on 15+ real mobile devices</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Achieve 90+ Lighthouse scores</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Under 1.2s load times guaranteed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 4 - White/Gray -->
+        <div class="bg-white text-black p-12 relative overflow-hidden group hover:scale-105 transition-all duration-300">
+          <div class="absolute top-4 right-4 text-[120px] font-black text-black/5 leading-none">4</div>
+          <div class="relative z-10">
+            <h3 class="text-sm font-black uppercase tracking-wider mb-4 opacity-60">WEEK FOUR</h3>
+            <h4 class="text-3xl font-black mb-6 pr-16">Hand You the Keys (No Manual Needed)</h4>
+            <ul class="space-y-2 text-black/80">
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Launch without the drama</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Show you how everything works</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-1 h-1 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>Actually answer your questions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-32 bg-gray-light">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-20">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">REAL CLIENTS</span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-black mt-6 text-black leading-[0.9]">
+          ACTUAL RESULTS.
+          <br/>
+          <span class="text-purple">REAL STORIES.</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto mt-8">
+          Don't just take our word for it. Here's what happens when businesses work with us.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Testimonial 1 - Monica -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col h-full">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="flex gap-1">
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+            </div>
+            <span class="text-black/60 text-xs font-bold uppercase tracking-wider">5.0 Review</span>
+          </div>
+          <div class="mb-6 flex-1">
+            <div class="text-lg font-black text-purple mb-3">"Outstanding Results!"</div>
+            <blockquote class="text-black/80 leading-relaxed">
+              "Working with Kayleigh and Tom has been a game-changer for my website and marketing strategy. Their expertise, attention to detail, and ability to translate my ideas into a functional, visually appealing site make the process smooth and stress-free. I always know what to focus on next rather than worry about everything all at once."
+            </blockquote>
+          </div>
+          <div class="mt-auto">
+            <cite class="text-lg font-black text-black not-italic">Monica Leggett</cite>
+            <p class="text-sm text-black/60">Business Owner</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 - Jack -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col h-full">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="flex gap-1">
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+            </div>
+            <span class="text-black/60 text-xs font-bold uppercase tracking-wider">5.0 Review</span>
+          </div>
+          <div class="mb-6 flex-1">
+            <div class="text-lg font-black text-purple mb-3">"Exceeded Our Expectations"</div>
+            <blockquote class="text-black/80 leading-relaxed">
+              "Tom was a game-changer for our e-commerce site. We had a site before, but it wasn't getting traffic, and we'd only made two sales. Tom optimized everything—making the site look and function so much better. Sales have jumped significantly, and we're excited to keep growing. What was once a struggle is now a mostly hands-off, smooth-running operation."
+            </blockquote>
+          </div>
+          <div class="mt-auto">
+            <cite class="text-lg font-black text-black not-italic">Jack S.</cite>
+            <p class="text-sm text-black/60">E-commerce Business</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 - Zina (Original) -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="flex gap-1">
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+              <span class="text-purple text-xl">★</span>
+            </div>
+            <span class="text-black/60 text-xs font-bold uppercase tracking-wider">Google Review</span>
+          </div>
+          <div class="mb-6">
+            <div class="text-lg font-black text-purple mb-3">"Made Process a Breeze"</div>
+            <blockquote class="text-black/80 leading-relaxed">
+              "Creating marketing collateral for a new business can be time consuming and challenging. Working with Kayleigh and Tom made this process a breeze. They are organized, creative and listen well, and executed my vision perfectly. The attention to detail and professional approach made all the difference. I look forward to continued partnership with Craft My Marketing as we grow."
+            </blockquote>
+          </div>
+          <div class="mt-auto">
+            <cite class="text-lg font-black text-black not-italic">Zina King</cite>
+            <p class="text-sm text-black/60">New Business Owner</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Summary -->
+      <div class="bg-purple p-12 rounded-2xl text-center">
+        <div class="text-white/60 text-sm font-black uppercase tracking-wider mb-6">WHAT OUR CLIENTS ACHIEVE</div>
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <div class="text-4xl font-black text-accent mb-2">Zero</div>
+            <div class="text-white/90">Technical Headaches</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-accent mb-2">4 Weeks</div>
+            <div class="text-white/90">From Start to Launch</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-accent mb-2">100%</div>
+            <div class="text-white/90">Stress-Free Process</div>
+          </div>
+        </div>
+        <p class="text-xl text-white/90 max-w-3xl mx-auto">
+          <strong>Ready to join them?</strong> Stop dealing with websites that don't work and start focusing on what you do best.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-xs">COMMON QUESTIONS</span>
+        <h2 class="text-4xl md:text-5xl font-display font-black mt-4 text-black">STRAIGHT ANSWERS</h2>
+      </div>
+      <div class="space-y-8">
+        <div class="border-l-4 border-purple pl-8">
+          <h3 class="text-xl font-black text-black mb-3">How long does it take to build a website?</h3>
+          <p class="text-black/70 leading-relaxed">
+            Our typical timeline is 4 weeks from kickoff to launch. We've refined our process over 50+ projects to be efficient without cutting corners. Clear communication and organized project management keep everything on track, so you can plan your launch with confidence.
+          </p>
+        </div>
+        <div class="border-l-4 border-accent pl-8">
+          <h3 class="text-xl font-black text-black mb-3">Can you help improve my existing website?</h3>
+          <p class="text-black/70 leading-relaxed">
+            Absolutely. We'll start with a comprehensive audit to identify what's working and what needs improvement. Sometimes a refresh is all you need; other times a rebuild makes more sense. We'll give you honest recommendations based on your goals and budget, and help you make the best decision for your business.
+          </p>
+        </div>
+        <div class="border-l-4 border-blue pl-8">
+          <h3 class="text-xl font-black text-black mb-3">Do you work with Connecticut small businesses?</h3>
+          <p class="text-black/70 leading-relaxed">
+            Yes! We're based in Ansonia, CT and love working with local businesses throughout Connecticut - from Stamford to Hartford, New Haven to Waterbury. We also work with clients nationwide. Whether you need in-person meetings or prefer virtual collaboration, we adapt to what works best for you.
+          </p>
+        </div>
+        <div class="border-l-4 border-purple pl-8">
+          <h3 class="text-xl font-black text-black mb-3">What makes Craft My Marketing different?</h3>
+          <p class="text-black/70 leading-relaxed">
+            You work directly with Kayleigh and Tom - not account managers or junior staff. We handle everything in-house, from design to development to launch. This means consistent quality, clear communication, and accountability. When you call, we answer. When you need changes, we make them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA - Unexpected Bold Design -->
+  <section class="relative py-32 overflow-hidden bg-white">
+    <!-- Animated diagonal stripes background -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, #8B00FF 0px, #8B00FF 2px, transparent 2px, transparent 40px); opacity: 0.03; animation: slide-diagonal 20s linear infinite;"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-8 text-center">
+      <!-- Main Hook -->
+      <h2 class="text-5xl md:text-6xl lg:text-7xl font-black text-black leading-[0.9] mb-8">
+        YOUR COMPETITORS ARE PROBABLY
+        <br/>
+        <span class="text-purple">USING 12 DIFFERENT</span>
+        <br/>
+        VENDORS RIGHT NOW
+      </h2>
+      
+      <!-- Subtext -->
+      <p class="text-2xl md:text-3xl text-black/60 font-bold mb-12 max-w-3xl mx-auto">
+        You could have one team handling everything by next month.
+      </p>
+      
+      <!-- Big CTA Button -->
+      <div class="mb-8">
+        <a href="/contact" class="inline-flex items-center justify-center px-16 py-8 bg-purple text-white font-black text-xl tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:scale-105 group">
+          BOOK A CALL (15 MIN, NO SALES BS)
+          <svg class="w-8 h-8 ml-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+      
+      <!-- Connecticut line for SEO -->
+      <p class="text-sm text-black/40 font-medium">
+        Proudly serving Connecticut businesses from Hartford to New Haven, Stamford to Waterbury.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes float-slow {
+    0%, 100% {
+      transform: rotate(45deg) translateX(64px) translateY(0px);
+    }
+    50% {
+      transform: rotate(45deg) translateX(64px) translateY(-20px);
+    }
+  }
+  
+  @keyframes float-slow-delayed {
+    0%, 100% {
+      transform: rotate(-12deg) translateX(-48px) translateY(0px);
+    }
+    50% {
+      transform: rotate(-12deg) translateX(-48px) translateY(20px);
+    }
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      transform: translateX(0%) translateY(0%);
+    }
+    50% {
+      transform: translateX(10%) translateY(-10%);
+    }
+    100% {
+      transform: translateX(0%) translateY(0%);
+    }
+  }
+  
+  @keyframes grid-move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
+  
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    25% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    50% {
+      transform: translate(-20px, 30px) scale(0.9);
+    }
+    75% {
+      transform: translate(40px, 20px) scale(1.05);
+    }
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      d: path("M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z");
+    }
+    50% {
+      d: path("M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,176C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z");
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-diagonal {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(40px, 40px);
+    }
+  }
+  
+  @keyframes race-lines {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(22px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .animate-float-delayed-2 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 4s;
+  }
+  
+  .animate-float-slow {
+    animation: float-slow 20s ease-in-out infinite;
+  }
+  
+  .animate-float-slow-delayed {
+    animation: float-slow-delayed 25s ease-in-out infinite;
+  }
+  
+  .animate-gradient-shift {
+    animation: gradient-shift 15s ease-in-out infinite;
+  }
+  
+  .animate-blob {
+    animation: blob 20s ease-in-out infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .animate-wave {
+    animation: wave 8s ease-in-out infinite;
+  }
+  
+  .animate-slide-in-1 {
+    animation: slide-in 0.6s ease-out 0.3s forwards;
+  }
+  
+  .animate-slide-in-2 {
+    animation: slide-in 0.6s ease-out 0.5s forwards;
+  }
+  
+  .animate-slide-in-3 {
+    animation: slide-in 0.6s ease-out 0.7s forwards;
+  }
+
+  /* Hover effects for cards */
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+  }
+
+  .group:hover .group-hover\:gap-4 {
+    gap: 1rem;
+  }
+
+  /* Custom gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--burnt-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
+
+<!-- Alpine.js for Automation Simulator -->
+<script src="//unpkg.com/alpinejs" defer></script>
+<script is:inline>
+window.automationSimulator = function() {
+  return {
+    businesses: [
+      {
+        id: 'coach',
+        name: 'Life Coach',
+        icon: '💡',
+        timeSaved: 12,
+        dollarsRecovered: 4200,
+        tasksAutomated: 7,
+        missedOpportunity: '$3,000/month from clients who "think about it" and never book',
+        cashFlow: 'Booked 85% more discovery calls',
+        growth: 'Scaled from 8 to 25 clients without burnout',
+        benefit1: 'Turn "maybe later" into "book my session now"',
+        benefit2: 'Onboard new clients while coaching current ones',
+        benefit3: 'Get testimonials and referrals automatically'
+      },
+      {
+        id: 'retailer',
+        name: 'Local Retailer',
+        icon: '🏪',
+        timeSaved: 15,
+        dollarsRecovered: 3800,
+        tasksAutomated: 8,
+        missedOpportunity: '$2,500/month from customers who browse but don\'t buy',
+        cashFlow: 'Recovered 40% of abandoned carts',
+        growth: 'Doubled repeat customer rate',
+        benefit1: 'Follow up with every customer who didn\'t buy',
+        benefit2: 'Turn one-time buyers into loyal customers',
+        benefit3: 'Get reviews and word-of-mouth automatically'
+      },
+      {
+        id: 'contractor',
+        name: 'Service Contractor',
+        icon: '🔨',
+        timeSaved: 18,
+        dollarsRecovered: 5600,
+        tasksAutomated: 9,
+        missedOpportunity: '$4,200/month from estimates that never got followed up',
+        cashFlow: 'Got paid 28 days faster on average',
+        growth: 'Increased project size by 45% through upsells',
+        benefit1: 'Never lose a qualified lead to slow follow-up',
+        benefit2: 'Get deposits before starting work',
+        benefit3: 'Generate referrals from every happy customer'
+      }
+    ],
+    
+    steps: [
+      { id: 'inquiry', title: 'Customer Inquires', icon: '📥', manualTime: 0 },
+      { id: 'capture', title: 'Info Captured', icon: '💾', manualTime: 3 },
+      { id: 'qualify', title: 'Lead Qualified', icon: '🎯', manualTime: 8 },
+      { id: 'respond', title: 'Instant Response', icon: '💬', manualTime: 15 },
+      { id: 'schedule', title: 'Meeting Booked', icon: '📅', manualTime: 12 },
+      { id: 'nurture', title: 'Follow-up Sequence', icon: '🔔', manualTime: 20 },
+      { id: 'convert', title: 'Customer Converted', icon: '✅', manualTime: 0 }
+    ],
+    
+    selectedBusiness: null,
+    isRunning: false,
+    currentStep: 0,
+    showFinalStats: false,
+    
+    init() {
+      this.selectedBusiness = this.businesses[0]; // Start with Life Coach
+    },
+    
+    selectBusiness(business) {
+      this.selectedBusiness = business;
+      this.resetSimulation();
+    },
+    
+    async runSimulation() {
+      this.isRunning = true;
+      this.currentStep = 0;
+      this.showFinalStats = false;
+      
+      for (let i = 0; i < this.steps.length; i++) {
+        this.currentStep = i;
+        await new Promise(resolve => setTimeout(resolve, 3500));
+      }
+      
+      setTimeout(() => {
+        this.showFinalStats = true;
+      }, 1500);
+    },
+    
+    resetSimulation() {
+      this.isRunning = false;
+      this.currentStep = 0;
+      this.showFinalStats = false;
+    },
+    
+    getStepContent() {
+      const step = this.steps[this.currentStep];
+      const business = this.selectedBusiness;
+      
+      switch(step.id) {
+        case 'inquiry':
+          if (business.id === 'coach') {
+            return `
+              <div class="bg-white rounded-xl border-2 border-purple/20 p-6 max-w-lg mx-auto shadow-xl">
+                <div class="flex items-center mb-3">
+                  <span class="text-3xl mr-3">💭</span>
+                  <span class="font-black text-lg">Website Form Submitted</span>
+                </div>
+                <div class="text-left text-black/70">
+                  <p class="mb-2">"I've been struggling with work-life balance and feel stuck in my career. Could really use some guidance."</p>
+                  <p class="text-sm font-medium">- Jennifer K., working mom in Stamford</p>
+                </div>
+              </div>
+            `;
+          } else if (business.id === 'retailer') {
+            return `
+              <div class="bg-white rounded-xl border-2 border-purple/20 p-6 max-w-lg mx-auto shadow-xl">
+                <div class="flex items-center mb-3">
+                  <span class="text-3xl mr-3">🛍️</span>
+                  <span class="font-black text-lg">Customer Browsing</span>
+                </div>
+                <div class="text-left text-black/70">
+                  <p class="mb-2">Customer viewed 6 products, added 2 to cart, then left without buying</p>
+                  <p class="text-sm font-medium">- Cart value: $145 (abandoned)</p>
+                </div>
+              </div>
+            `;
+          } else {
+            return `
+              <div class="bg-white rounded-xl border-2 border-purple/20 p-6 max-w-lg mx-auto shadow-xl">
+                <div class="flex items-center mb-3">
+                  <span class="text-3xl mr-3">📞</span>
+                  <span class="font-black text-lg">Project Inquiry</span>
+                </div>
+                <div class="text-left text-black/70">
+                  <p class="mb-2">"Need to renovate our kitchen before the holidays. What would something like that cost?"</p>
+                  <p class="text-sm font-medium">- Homeowner in New Haven</p>
+                </div>
+              </div>
+            `;
+          }
+          
+        case 'capture':
+          return `
+            <div class="bg-accent/10 rounded-xl p-6 max-w-lg mx-auto">
+              <div class="flex items-center justify-center">
+                <svg class="w-16 h-16 text-purple animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <p class="text-center mt-3 font-black text-lg">All their details saved instantly</p>
+              <p class="text-center text-black/60 mt-2">Name, email, phone, needs, source - everything captured</p>
+            </div>
+          `;
+          
+        case 'qualify':
+          if (business.id === 'coach') {
+            return `
+              <div class="bg-purple/5 rounded-xl p-6 max-w-lg mx-auto border border-purple/20">
+                <div class="text-center">
+                  <span class="text-4xl mb-3 block">🎯</span>
+                  <p class="font-black text-lg mb-3">Smart Qualification Questions</p>
+                  <div class="text-left space-y-2 text-sm">
+                    <p class="flex items-center"><span class="text-accent mr-2">✓</span> Budget range identified</p>
+                    <p class="flex items-center"><span class="text-accent mr-2">✓</span> Timeline confirmed</p>
+                    <p class="flex items-center"><span class="text-accent mr-2">✓</span> Decision maker verified</p>
+                    <p class="flex items-center"><span class="text-accent mr-2">✓</span> Pain level scored (8/10 - high priority)</p>
+                  </div>
+                </div>
+              </div>
+            `;
+          } else {
+            return `
+              <div class="bg-purple/5 rounded-xl p-6 max-w-lg mx-auto border border-purple/20">
+                <div class="text-center">
+                  <span class="text-4xl">🎯</span>
+                  <p class="font-black text-lg mt-3">Lead Scored & Qualified</p>
+                  <p class="text-black/60 mt-2">Budget, timeline, and decision-making authority confirmed</p>
+                </div>
+              </div>
+            `;
+          }
+          
+        case 'respond':
+          if (business.id === 'coach') {
+            return `
+              <div class="bg-white rounded-xl border-2 border-accent p-6 max-w-lg mx-auto shadow-xl">
+                <div class="text-sm text-purple font-bold mb-3">Personalized auto-reply sent:</div>
+                <div class="bg-accent/10 p-4 rounded-lg">
+                  <p class="text-sm text-black">"Hi Jennifer! I completely understand that feeling of being stuck - you're not alone. I've helped dozens of working moms in Connecticut break through exactly what you're experiencing. I have 3 spots open this week for a free 30-minute breakthrough call. Which works better: Tuesday at 2pm or Thursday at 11am?"</p>
+                </div>
+                <div class="text-xs text-purple font-bold mt-2">High-value prospect engaged in under 60 seconds!</div>
+              </div>
+            `;
+          } else if (business.id === 'retailer') {
+            return `
+              <div class="bg-white rounded-xl border-2 border-accent p-6 max-w-lg mx-auto shadow-xl">
+                <div class="text-sm text-purple font-bold mb-3">Abandoned cart recovery email:</div>
+                <div class="bg-accent/10 p-4 rounded-lg">
+                  <p class="text-sm text-black">"Forgot something? Those items you loved are still waiting! Plus, I'll throw in free shipping if you complete your order in the next hour. Here's the link to finish checkout..."</p>
+                </div>
+                <div class="text-xs text-purple font-bold mt-2">$145 sale recovered automatically!</div>
+              </div>
+            `;
+          } else {
+            return `
+              <div class="bg-white rounded-xl border-2 border-accent p-6 max-w-lg mx-auto shadow-xl">
+                <div class="text-sm text-purple font-bold mb-3">Instant response with portfolio:</div>
+                <div class="bg-accent/10 p-4 rounded-lg">
+                  <p class="text-sm text-black">"Thanks for your interest! Kitchen renovations typically range from $15k-45k depending on scope. I've attached photos from 3 recent New Haven projects similar to what you described. I can swing by for a free estimate this Thursday or Friday - which works better?"</p>
+                </div>
+                <div class="text-xs text-purple font-bold mt-2">$28k project opportunity secured!</div>
+              </div>
+            `;
+          }
+          
+        case 'schedule':
+          return `
+            <div class="bg-white rounded-xl border-2 border-accent/50 p-6 max-w-lg mx-auto shadow-xl">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-3xl">📅</span>
+                <span class="text-accent font-black">MEETING CONFIRMED</span>
+              </div>
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-black/60">Time Slot:</span>
+                  <span class="font-black">Best available automatically selected</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-black/60">Calendar:</span>
+                  <span class="font-black">Added to both calendars ✓</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-black/60">Reminders:</span>
+                  <span class="font-black">Email + SMS scheduled ✓</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-black/60">Prep materials:</span>
+                  <span class="font-black">Sent automatically ✓</span>
+                </div>
+              </div>
+            </div>
+          `;
+          
+        case 'nurture':
+          return `
+            <div class="bg-gradient-to-r from-purple/5 to-accent/5 rounded-xl p-6 max-w-lg mx-auto border border-purple/20">
+              <div class="text-center">
+                <span class="text-4xl mb-3 block">🔔</span>
+                <p class="font-black text-lg mb-4">Smart Follow-up Sequence Active</p>
+                <div class="grid grid-cols-4 gap-3 text-xs">
+                  <div class="text-center">
+                    <div class="text-2xl">📧</div>
+                    <p class="font-bold">Confirmation</p>
+                    <p class="text-black/50">Immediate</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-2xl">📱</div>
+                    <p class="font-bold">Reminder</p>
+                    <p class="text-black/50">Day before</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-2xl">💼</div>
+                    <p class="font-bold">Prep docs</p>
+                    <p class="text-black/50">2 hours</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-2xl">🎁</div>
+                    <p class="font-bold">Bonus</p>
+                    <p class="text-black/50">At meeting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          
+        default:
+          return '';
+      }
+    }
+  }
+}
+
+window.customAppsDemo = function() {
+  return {
+    businesses: [
+      {
+        id: 'coach',
+        name: 'Life Coach',
+        icon: '💡',
+        currentChaos: `
+          <div class="space-y-3 text-sm text-red-800">
+            <p class="font-bold">😩 Juggling 3 different systems:</p>
+            <ul class="ml-4 space-y-1">
+              <li>• Calendly for scheduling</li>
+              <li>• Google Sheets for client progress</li>
+              <li>• Email for everything else</li>
+            </ul>
+            <p class="font-bold mt-4">😓 Result: Clients get lost in the shuffle</p>
+          </div>
+        `,
+        discoveryResult: `After 2 hours together: Current systems work, but they don't talk to each other. You're spending 8 hours/week on admin that should take 1 hour.`,
+        solutionType: 'Custom Client Portal',
+        solutionMockup: `
+          <div class="text-left text-xs space-y-2">
+            <div class="font-bold text-green-800 mb-2">✨ ClientFlow Dashboard</div>
+            <div class="flex justify-between bg-green-100 p-2 rounded">
+              <span>Jennifer K.</span>
+              <span class="text-green-600">Session in 2 days</span>
+            </div>
+            <div class="flex justify-between bg-green-50 p-2 rounded">
+              <span>Progress: Week 8/12</span>
+              <span class="text-green-600">Goal: 85% complete</span>
+            </div>
+            <div class="text-center bg-green-200 p-2 rounded font-bold">
+              Auto-sends session reminders & homework
+            </div>
+          </div>
+        `,
+        resultMetric: 'Saves 7 hours/week',
+        resultDescription: 'Admin time drops from 8 hours to 1 hour per week'
+      },
+      {
+        id: 'retailer',
+        name: 'Local Retailer',
+        icon: '🏪',
+        currentChaos: `
+          <div class="space-y-3 text-sm text-red-800">
+            <p class="font-bold">😩 Inventory nightmare:</p>
+            <ul class="ml-4 space-y-1">
+              <li>• Can't track what's selling</li>
+              <li>• Running out of popular items</li>
+              <li>• Overstocking slow movers</li>
+            </ul>
+            <p class="font-bold mt-4">😓 Result: $2,000/month in lost sales</p>
+          </div>
+        `,
+        discoveryResult: `After walking your store: You need smart reorder alerts, not a full POS replacement. Current system stays, we just add intelligence.`,
+        solutionType: 'Smart Inventory Alerts',
+        solutionMockup: `
+          <div class="text-left text-xs space-y-2">
+            <div class="font-bold text-green-800 mb-2">📦 StockSmart Alerts</div>
+            <div class="flex justify-between bg-green-100 p-2 rounded">
+              <span>Winter boots (Size 8)</span>
+              <span class="text-orange-600">Order now!</span>
+            </div>
+            <div class="flex justify-between bg-green-50 p-2 rounded">
+              <span>Holiday mugs</span>
+              <span class="text-green-600">In stock</span>
+            </div>
+            <div class="text-center bg-green-200 p-2 rounded font-bold">
+              Connects to your existing POS
+            </div>
+          </div>
+        `,
+        resultMetric: 'Prevents $1,800/month in lost sales',
+        resultDescription: 'Never run out of bestsellers again'
+      },
+      {
+        id: 'contractor',
+        name: 'Service Contractor',
+        icon: '🔨',
+        currentChaos: `
+          <div class="space-y-3 text-sm text-red-800">
+            <p class="font-bold">😩 Project communication chaos:</p>
+            <ul class="ml-4 space-y-1">
+              <li>• Clients constantly asking "what's next?"</li>
+              <li>• Texting photos from job sites</li>
+              <li>• Email threads getting lost</li>
+            </ul>
+            <p class="font-bold mt-4">😓 Result: Stressed clients, constant interruptions</p>
+          </div>
+        `,
+        discoveryResult: `After reviewing 5 recent projects: Clients just want to see progress. A simple project portal would eliminate 80% of your phone calls.`,
+        solutionType: 'Project Communication Hub',
+        solutionMockup: `
+          <div class="text-left text-xs space-y-2">
+            <div class="font-bold text-green-800 mb-2">🏗️ ProjectView Portal</div>
+            <div class="bg-green-100 p-2 rounded">
+              <div class="font-bold">Kitchen Renovation - Day 5</div>
+              <div class="text-green-700">✅ Demo complete</div>
+              <div class="text-blue-600">🔄 Plumbing in progress</div>
+            </div>
+            <div class="text-center bg-green-200 p-2 rounded font-bold">
+              Photos upload automatically from your phone
+            </div>
+          </div>
+        `,
+        resultMetric: 'Reduces calls by 75%',
+        resultDescription: 'Clients stay informed, you stay focused on the work'
+      }
+    ],
+    
+    selectedBusiness: null,
+    
+    init() {
+      this.selectedBusiness = this.businesses[0]; // Start with Life Coach
+    },
+    
+    selectBusiness(business) {
+      this.selectedBusiness = business;
+    }
+  }
+}
+</script>
+

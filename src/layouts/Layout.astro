@@ -1,0 +1,342 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = "Your Complete Digital Department - Websites, Automation, and Custom Solutions for Connecticut Businesses",
+  keywords = "web design Connecticut, CT digital marketing, Connecticut website development, business automation CT, custom app development Connecticut, Ansonia web design, digital agency CT, marketing automation Connecticut",
+  ogImage = "/og-image.jpg",
+  canonical
+} = Astro.props;
+
+// Import settings
+import settings from '../content/settings/general.json';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title} | {settings.companyName}</title>
+    <meta name="title" content={`${title} | ${settings.companyName}`} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={settings.companyName} />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical || "https://cmmct.com/"} />
+    <meta property="og:title" content={`${title} | ${settings.companyName}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content={settings.companyName} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonical || "https://cmmct.com/"} />
+    <meta property="twitter:title" content={`${title} | ${settings.companyName}`} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": settings.companyName,
+        "description": settings.tagline,
+        "url": "https://cmmct.com",
+        "telephone": settings.phone,
+        "email": settings.email,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ansonia",
+          "addressRegion": "CT",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "41.3459",
+          "longitude": "-73.0790"
+        },
+        "areaServed": [
+          {
+            "@type": "State",
+            "name": "Connecticut"
+          },
+          {
+            "@type": "City",
+            "name": "Ansonia"
+          },
+          {
+            "@type": "City",
+            "name": "Derby"
+          },
+          {
+            "@type": "City",
+            "name": "Shelton"
+          },
+          {
+            "@type": "City",
+            "name": "New Haven"
+          }
+        ],
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "sameAs": [
+          "https://calendly.com/cmmct"
+        ]
+      })}
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": settings.companyName,
+        "alternateName": "CMM",
+        "url": "https://cmmct.com",
+        "logo": "https://cmmct.com/logo.png",
+        "description": "Digital marketing agency specializing in websites, automation, and custom technology solutions for Connecticut businesses",
+        "foundingDate": "2023",
+        "founder": {
+          "@type": "Person",
+          "name": "Tom"
+        },
+        "serviceArea": {
+          "@type": "State",
+          "name": "Connecticut"
+        },
+        "knowsAbout": [
+          "Web Design",
+          "Web Development",
+          "Digital Marketing",
+          "Business Automation",
+          "Custom Software Development",
+          "SEO",
+          "Mobile App Development",
+          "E-commerce",
+          "AI Integration"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Website Development",
+              "description": "Lightning-fast, AI-ready websites built for mobile and search engines"
+            },
+            {
+              "@type": "Offer",
+              "name": "Business Automation",
+              "description": "Smart automation solutions to eliminate manual tasks"
+            },
+            {
+              "@type": "Offer",
+              "name": "Custom Applications",
+              "description": "Tailored software solutions built for your specific workflow"
+            }
+          ]
+        }
+      })}
+    </script>
+
+    <!-- WebSite Schema for Sitelinks Searchbox -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://cmmct.com/",
+        "name": settings.companyName,
+        "description": settings.tagline,
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://cmmct.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      })}
+    </script>
+
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  </head>
+  <body class="font-sans">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-black/10 nav-shadow">
+      <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo - Bold and Geometric -->
+          <a href="/" class="flex items-center gap-4">
+            <div class="bg-black w-14 h-14 flex items-center justify-center transform hover:rotate-6 transition-transform">
+              <span class="text-pink font-black text-xl">CMM</span>
+            </div>
+            <span class="hidden lg:block text-black/60 text-xs uppercase tracking-[0.2em] font-black">{settings.tagline}</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-8">
+            <!-- Services Dropdown -->
+            <div class="relative group">
+              <button class="text-black hover:text-purple font-black uppercase tracking-wider text-sm transition-all hover:scale-110 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple hover:after:w-full after:transition-all flex items-center gap-1">
+                Services
+                <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <a href="/services/websites" class="block px-4 py-3 text-black hover:bg-purple hover:text-white font-bold text-sm border-b border-gray-100 transition-colors">Websites</a>
+                <a href="/services/technology" class="block px-4 py-3 text-black hover:bg-purple hover:text-white font-bold text-sm transition-colors">Technology Solutions</a>
+              </div>
+            </div>
+            <a href="/process" class="text-black hover:text-purple font-black uppercase tracking-wider text-sm transition-all hover:scale-110 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple hover:after:w-full after:transition-all">Process</a>
+            <a href="/about" class="text-black hover:text-purple font-black uppercase tracking-wider text-sm transition-all hover:scale-110 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple hover:after:w-full after:transition-all">About</a>
+            <a href="/contact" class="px-8 py-3 bg-purple text-white font-black uppercase tracking-wider hover:bg-purple-dark hover:scale-105 transition-all duration-300 text-sm shadow-lg">
+              Book a Call
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden p-2 text-black" aria-label="Toggle menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation - Full Screen Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black z-50 pt-20">
+          <div class="flex flex-col items-center justify-center h-full space-y-6">
+            <!-- Services Section -->
+            <div class="text-center space-y-4">
+              <div class="text-purple text-xl font-black uppercase tracking-wider">Services</div>
+              <div class="space-y-3">
+                <a href="/services/websites" class="block text-white text-lg font-bold hover:text-purple transition-colors">Websites</a>
+                <a href="/services/technology" class="block text-white text-lg font-bold hover:text-purple transition-colors">Technology Solutions</a>
+              </div>
+            </div>
+            <a href="/process" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">Process</a>
+            <a href="/about" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">About</a>
+            <a href="/contact" class="mt-8 px-12 py-6 bg-purple text-white font-black text-xl uppercase tracking-wider hover:bg-purple-dark transition-colors">Book a Call</a>
+          </div>
+          <button id="mobile-menu-close" class="absolute top-8 right-8 text-white p-2" aria-label="Close menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-black text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="md:col-span-2">
+            <h3 class="text-3xl font-display font-bold mb-4 text-pink">{settings.companyName}</h3>
+            <p class="text-white/90 mb-4 text-lg">{settings.tagline}</p>
+            <p class="text-white/70">{settings.address}</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold mb-4 text-pink">Services</h4>
+            <ul class="space-y-2 text-white/80">
+              <li><a href="/services/websites" class="hover:text-purple transition-colors">Websites</a></li>
+              <li><a href="/services/technology" class="hover:text-purple transition-colors">Technology Solutions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="font-bold mb-4 text-pink">Get in Touch</h4>
+            <ul class="space-y-2 text-white/80">
+              <li>
+                <a href={`tel:${settings.phone}`} class="hover:text-pink transition-colors">
+                  {settings.phone}
+                </a>
+              </li>
+              <li>
+                <a href="mailto:Kayleigh@cmmct.com" class="hover:text-pink transition-colors">
+                  Kayleigh@cmmct.com
+                </a>
+              </li>
+              <li>
+                <a href="mailto:Tom@cmmct.com" class="hover:text-pink transition-colors">
+                  Tom@cmmct.com
+                </a>
+              </li>
+              <li>
+                <a href="/contact" class="hover:text-pink transition-colors">
+                  Schedule a Call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+          <p>&copy; {new Date().getFullYear()} {settings.companyName}. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeButton = document.getElementById('mobile-menu-close');
+      const body = document.body;
+      
+      menuButton?.addEventListener('click', () => {
+        mobileMenu?.classList.remove('hidden');
+        body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+      });
+
+      closeButton?.addEventListener('click', () => {
+        mobileMenu?.classList.add('hidden');
+        body.style.overflow = 'auto'; // Re-enable scrolling
+      });
+
+      // Close menu when clicking on a link
+      const mobileLinks = mobileMenu?.querySelectorAll('a');
+      mobileLinks?.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu?.classList.add('hidden');
+          body.style.overflow = 'auto';
+        });
+      });
+
+      // Netlify Identity redirect
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user: any) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

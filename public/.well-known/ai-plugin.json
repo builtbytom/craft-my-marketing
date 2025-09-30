@@ -1,0 +1,13 @@
+{
+  "schema_version": "v1",
+  "name": "Craft My Marketing",
+  "description": "Digital marketing agency providing websites, automation, and custom solutions for Connecticut businesses",
+  "url": "https://cmmct.com",
+  "contact_email": "hello@cmmct.com",
+  "legal_info_url": "https://cmmct.com/legal",
+  "logo_url": "https://cmmct.com/logo.png",
+  "api": {
+    "type": "website",
+    "url": "https://cmmct.com"
+  }
+}

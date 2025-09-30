@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About - The Team Behind CMM | Craft My Marketing">
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center overflow-hidden bg-white">
+    <!-- Animated Background -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(#8B00FF 1px, transparent 1px), linear-gradient(90deg, #8B00FF 1px, transparent 1px); background-size: 50px 50px; animation: grid-move 20s linear infinite;"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple/20 rounded-full filter blur-3xl animate-blob"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/15 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+      </div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16 py-20">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-8">
+          <div class="inline-flex items-center gap-3 mb-10">
+            <div class="w-2 h-2 bg-accent"></div>
+            <span class="text-xs font-black text-black uppercase tracking-[0.2em]">MEET THE TEAM</span>
+          </div>
+
+          <h1 class="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-display font-black leading-[0.85] tracking-[-0.03em] mb-10">
+            <span class="text-black">BUSINESS STRATEGY</span>
+            <br/>
+            <span class="text-purple">MEETS TECHNICAL</span>
+            <br/>
+            <span class="text-purple">EXECUTION</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-black/60 mb-16 max-w-2xl leading-relaxed font-bold">
+            Kayleigh understands clients and business strategy. Tom builds systems that actually work. Together, we solve problems instead of creating them.
+          </p>
+
+          <div class="flex flex-wrap gap-6">
+            <a href="#story" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+              OUR STORY
+              <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+            <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 font-black text-lg tracking-wider text-black bg-transparent border-4 border-black hover:bg-black hover:text-white transition-all duration-300">
+              WORK WITH US
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Stats -->
+        <div class="lg:col-span-4 relative">
+          <div class="bg-purple text-white p-8 rounded-2xl shadow-2xl">
+            <div class="text-center mb-6">
+              <div class="text-2xl font-black mb-2">COMBINED EXPERIENCE</div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Years in Business</span>
+                <span class="text-xl font-black text-accent">30+</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Total Revenue Managed</span>
+                <span class="text-xl font-black text-accent">$100M+</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold">Clients Served</span>
+                <span class="text-xl font-black text-accent">200+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Story -->
+  <section id="story" class="py-24 bg-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <span class="text-black/50 font-black uppercase tracking-[0.2em] text-sm">HOW WE CAME TOGETHER</span>
+        <h2 class="text-4xl md:text-5xl font-display font-black mt-6 leading-[0.9] mb-8">
+          <span class="text-black">FROM MARKETING AGENCY</span>
+          <br/>
+          <span class="text-purple">TO TECHNOLOGY PARTNERS</span>
+        </h2>
+        <p class="text-xl text-black/60 max-w-3xl mx-auto">
+          The strategic evolution that makes us stronger together
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Kayleigh's Journey -->
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-3xl font-display font-black mb-6">
+            <span class="text-purple">Kayleigh's Foundation</span>
+          </h3>
+          <div class="space-y-4 text-black/80">
+            <p class="text-lg leading-relaxed">
+              <strong>2015:</strong> Kayleigh founded Craft My Marketing, building it from a side project into a full-time business by 2021.
+            </p>
+            <p>
+              Over 10 years, she worked with cafés, coaches, manufacturers, and nonprofits. Recognized as "40 Under 40" by Fairfield County Business Journal in 2016.
+            </p>
+            <p>
+              <strong>The Pattern:</strong> Clients kept asking for the same thing - not better marketing, but better <em>systems</em>. They needed technology solutions, not more social media posts.
+            </p>
+            <div class="bg-purple/10 p-4 rounded-lg border border-purple/20">
+              <div class="text-sm font-bold text-purple mb-2">THE REALIZATION:</div>
+              <div class="text-sm text-black/70">"My clients don't have marketing problems. They have technology problems."</div>
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Tom's Background -->
+        <div class="bg-purple text-white p-8 rounded-2xl">
+          <h3 class="text-3xl font-display font-black mb-6">
+            <span class="text-accent">Tom's Experience</span>
+          </h3>
+          <div class="space-y-4 text-white/90">
+            <p class="text-lg leading-relaxed">
+              <strong>20+ years:</strong> Building and scaling businesses - from restaurant GM programming POS systems to co-founding a $100M+ Amazon FBA operation.
+            </p>
+            <p>
+              Tom wasn't just managing systems - he was building them under pressure. When his $17M inventory operation nearly collapsed from manual processes, he built a custom solution that saved $750K/year.
+            </p>
+            <p>
+              <strong>The Expertise:</strong> Real-world experience solving business problems with technology, not just theory from coding bootcamps.
+            </p>
+            <div class="bg-accent/10 p-4 rounded-lg border border-accent/20">
+              <div class="text-sm font-bold text-accent mb-2">THE SPECIALTY:</div>
+              <div class="text-sm text-white/80">"I build systems that actually work when your business depends on them."</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- The Partnership -->
+      <div class="mt-16 text-center bg-accent/10 p-8 rounded-2xl border border-accent/20">
+        <h3 class="text-2xl font-black mb-6">2025: The Partnership</h3>
+        <p class="text-lg text-black/80 max-w-4xl mx-auto leading-relaxed">
+          When Kayleigh realized her clients needed technology solutions, not marketing services, she knew exactly who to call. Tom brought the operational experience and technical skills to transform Craft My Marketing from a traditional agency into a technology solutions partner.
+        </p>
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div class="text-center">
+            <div class="text-3xl font-black text-purple mb-2">Kayleigh</div>
+            <div class="text-sm font-bold text-black/60">Client strategy & relationships</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-purple mb-2">Tom</div>
+            <div class="text-sm font-bold text-black/60">Technical execution & systems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters to You -->
+  <section class="py-24 bg-purple text-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-white">WHAT THIS MEANS</span>
+          <span class="text-accent"> FOR YOU</span>
+        </h2>
+      </div>
+      
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">1</div>
+          <h3 class="text-xl font-black mb-4">Someone Who Gets Clients</h3>
+          <p class="text-white/80">Kayleigh has managed client relationships for 10+ years. She knows how to listen, understand your real needs, and communicate clearly.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">2</div>
+          <h3 class="text-xl font-black mb-4">Someone Who Builds Systems</h3>
+          <p class="text-white/80">Tom has built systems that handled $100M+ in business operations. Not theory from a bootcamp - real systems under real pressure.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">3</div>
+          <h3 class="text-xl font-black mb-4">Solutions That Actually Work</h3>
+          <p class="text-white/80">You get business strategy that understands clients AND technical execution that solves real problems. No gaps, no confusion.</p>
+        </div>
+      </div>
+      
+      <!-- The Hot Sauce Story -->
+      <div class="mt-16 bg-black/20 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+        <h3 class="text-2xl font-black text-center mb-6 text-accent">Why We Focus on Practical Solutions</h3>
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="text-white/90">
+            <p class="text-lg leading-relaxed mb-4">
+              Tom once watched a warehouse manager spend <strong>4 hours</strong> sorting 400 cases of hot sauce by expiration date. With a clipboard. Every week.
+            </p>
+            <p class="text-lg leading-relaxed">
+              That's <strong class="text-accent">$5,000/year</strong> just to figure out which sauce to ship first. For one product. They had 200 products.
+            </p>
+          </div>
+          <div class="bg-white/10 p-6 rounded-xl">
+            <div class="text-center">
+              <div class="text-lg font-bold text-red-400 mb-2">BEFORE: Manual Process</div>
+              <div class="text-3xl font-black text-red-400 mb-4">4 hours</div>
+              <div class="text-lg font-bold text-accent mb-2">AFTER: Automated System</div>
+              <div class="text-3xl font-black text-accent">4 seconds</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <p class="text-white/80">Every business has their "hot sauce problem." We find yours and fix it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet The Team -->
+  <section class="py-24 bg-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-black">MEET</span>
+          <span class="text-purple"> THE TEAM</span>
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Kayleigh -->
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <!-- Kayleigh's Photo -->
+          <div class="flex justify-center mb-8">
+            <img src="/images/kayleigh-headshot.png" alt="Kayleigh Mihalko" class="w-32 h-32 rounded-full object-cover shadow-2xl border-4 border-purple" />
+          </div>
+          
+          <h3 class="text-3xl font-display font-black mb-6 text-center">
+            <span class="text-purple">Kayleigh Mihalko</span>
+          </h3>
+          <div class="text-sm font-bold text-purple mb-6 uppercase tracking-wider text-center">Business Strategy & Client Experience</div>
+          
+          <div class="space-y-4 text-black/80 mb-8">
+            <p>
+              <strong>10+ years</strong> building client relationships across diverse industries - from cafés to industrial companies. Recognized as "40 Under 40" by Fairfield County Business Journal.
+            </p>
+            <p>
+              Kayleigh founded Craft My Marketing in 2015, taking it full-time in 2021. Her background spans marketing leadership for nonprofits, CRM management at R.D. Scinto (major CT commercial real estate), and strategic marketing development.
+            </p>
+            <p>
+              <strong>Her superpower:</strong> Understanding what clients actually need vs. what they think they need, and translating business problems into clear technical requirements.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-bold text-purple">What Kayleigh Brings:</h4>
+            <ul class="space-y-2 text-black/70">
+              <li>• Proven client relationship management</li>
+              <li>• Business strategy and problem identification</li>
+              <li>• Project coordination and communication</li>
+              <li>• Industry experience across multiple sectors</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tom -->
+        <div class="bg-purple text-white p-8 rounded-2xl">
+          <!-- Tom's Photo -->
+          <div class="flex justify-center mb-8">
+            <img src="/images/tom-lucia-headshot.jpeg" alt="Tom Lucia" class="w-32 h-32 rounded-full object-cover shadow-2xl border-4 border-accent" />
+          </div>
+          
+          <h3 class="text-3xl font-display font-black mb-6 text-center">
+            <span class="text-accent">Tom Lucia</span>
+          </h3>
+          <div class="text-sm font-bold text-accent mb-6 uppercase tracking-wider text-center">Technical Architecture & System Building</div>
+          
+          <div class="space-y-4 text-white/90 mb-8">
+            <p>
+              <strong>20+ years</strong> building and scaling operations - restaurant GM programming POS systems, co-founding a $100M+ Amazon FBA business, solving problems under real pressure.
+            </p>
+            <p>
+              Tom built a custom warehouse management system using Google Sheets that handled 100K+ SKUs, 20 employees, and saved $750K/year. Not theory from bootcamps - real systems that real businesses depend on.
+            </p>
+            <p>
+              <strong>His superpower:</strong> Seeing the "hot sauce problems" - those expensive manual processes bleeding money that everyone accepts as "just how business works."
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-bold text-accent">What Tom Brings:</h4>
+            <ul class="space-y-2 text-white/80">
+              <li>• Real-world operations experience at scale</li>
+              <li>• Business owner perspective on technology</li>
+              <li>• System design and implementation</li>
+              <li>• Solutions that work under pressure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Promise -->
+  <section class="py-24 bg-black text-white">
+    <div class="max-w-[1600px] mx-auto px-8 lg:px-12 xl:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-black mb-8">
+          <span class="text-white">Our Promise</span>
+          <span class="text-accent"> To You</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">1</div>
+          <h3 class="text-xl font-black mb-4">Plain English Only</h3>
+          <p class="text-white/70">If we can't explain it simply, it's too complicated. No tech jargon, no corporate speak.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">2</div>
+          <h3 class="text-xl font-black mb-4">Real Support</h3>
+          <p class="text-white/70">We answer our phones. We respond to emails. You're working with humans, not a support ticket system.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl mb-6 mx-auto">3</div>
+          <h3 class="text-xl font-black mb-4">Solutions That Work</h3>
+          <p class="text-white/70">We build systems that actually function under pressure, because we've been under that pressure ourselves.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-16">
+        <p class="text-xl text-white/80 mb-8">
+          We're not trying to build an empire. We're building something better: a business that gives us and our clients the calm we all deserve.
+        </p>
+        <a href="/contact" class="inline-flex items-center justify-center px-12 py-6 bg-purple text-white font-black text-lg tracking-wider hover:bg-purple-dark transition-all duration-300 shadow-2xl hover:translate-x-2">
+          LET'S SOLVE YOUR PROBLEMS
+          <svg class="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- 
+  TEAM PHOTO REPLACEMENTS:
+  
+  To replace the placeholder avatars (KM/TL) with real photos:
+  
+  1. Add photos to /public/images/team/ folder (e.g., kayleigh.jpg, tom.jpg)
+  
+  2. Replace Kayleigh's avatar div:
+     FROM: <div class="w-32 h-32 bg-gradient-to-br from-purple to-purple-dark...">KM</div>
+     TO:   <img src="/images/team/kayleigh.jpg" alt="Kayleigh Mihalko" 
+                class="w-32 h-32 rounded-full object-cover shadow-2xl">
+  
+  3. Replace Tom's avatar div:
+     FROM: <div class="w-32 h-32 bg-gradient-to-br from-accent to-teal...">TL</div>
+     TO:   <img src="/images/team/tom.jpg" alt="Tom Lucia" 
+                class="w-32 h-32 rounded-full object-cover shadow-2xl">
+                
+  Pro tip: Photos should be square (1:1 ratio) and at least 256x256 pixels for crisp display.
+-->
+</Layout>
