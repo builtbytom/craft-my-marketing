@@ -219,30 +219,30 @@ import settings from '../content/settings/general.json';
             </svg>
           </button>
         </div>
-
-        <!-- Mobile Navigation - Full Screen Overlay -->
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black z-[100] pt-0">
-          <div class="flex flex-col items-center justify-center h-full space-y-6">
-            <!-- Services Section -->
-            <div class="text-center space-y-4">
-              <div class="text-purple text-xl font-black uppercase tracking-wider">Services</div>
-              <div class="space-y-3">
-                <a href="/services/websites" class="block text-white text-lg font-bold hover:text-purple transition-colors">Websites</a>
-                <a href="/services/technology" class="block text-white text-lg font-bold hover:text-purple transition-colors">Technology Solutions</a>
-              </div>
-            </div>
-            <a href="/process" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">Process</a>
-            <a href="/about" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">About</a>
-            <a href="/contact" class="mt-8 px-12 py-6 bg-purple text-white font-black text-xl uppercase tracking-wider hover:bg-purple-dark transition-colors">Book a Call</a>
-          </div>
-          <button id="mobile-menu-close" class="absolute top-8 right-8 text-white p-2" aria-label="Close menu">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
       </div>
     </nav>
+
+    <!-- Mobile Navigation - Full Screen Overlay -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black z-[100]">
+      <div class="flex flex-col items-center justify-center h-full space-y-6">
+        <!-- Services Section -->
+        <div class="text-center space-y-4">
+          <div class="text-purple text-xl font-black uppercase tracking-wider">Services</div>
+          <div class="space-y-3">
+            <a href="/services/websites" class="block text-white text-lg font-bold hover:text-purple transition-colors">Websites</a>
+            <a href="/services/technology" class="block text-white text-lg font-bold hover:text-purple transition-colors">Technology Solutions</a>
+          </div>
+        </div>
+        <a href="/process" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">Process</a>
+        <a href="/about" class="text-white text-2xl font-black uppercase tracking-wider hover:text-purple transition-colors">About</a>
+        <a href="/contact" class="mt-8 px-12 py-6 bg-purple text-white font-black text-xl uppercase tracking-wider hover:bg-purple-dark transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-close" class="absolute top-8 right-8 text-white p-2" aria-label="Close menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
 
     <main>
       <slot />
