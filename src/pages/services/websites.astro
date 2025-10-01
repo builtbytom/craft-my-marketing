@@ -263,7 +263,14 @@ import Layout from '../../layouts/Layout.astro';
               </div>
             </div>
           </div>
-          
+
+          <!-- Mobile VS Divider (between sections) -->
+          <div class="lg:hidden text-center my-8">
+            <div class="inline-flex bg-black/10 rounded-full px-6 py-3 backdrop-blur-sm border border-black/20">
+              <div class="text-black font-black text-xl">VS</div>
+            </div>
+          </div>
+
           <!-- Right: Your Site (Fast) -->
           <div class="text-center lg:text-left">
             <div class="mb-8">
@@ -281,18 +288,11 @@ import Layout from '../../layouts/Layout.astro';
             </div>
           </div>
         </div>
-        
-        <!-- VS Divider - Better Positioned -->
+
+        <!-- VS Divider - Better Positioned (desktop only) -->
         <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">
           <div class="bg-black/10 rounded-full w-16 h-16 flex items-center justify-center backdrop-blur-sm border border-black/20">
             <div class="text-black font-black text-2xl">VS</div>
-          </div>
-        </div>
-        
-        <!-- Mobile VS Divider -->
-        <div class="lg:hidden text-center my-8">
-          <div class="inline-flex bg-black/10 rounded-full px-6 py-3 backdrop-blur-sm border border-black/20">
-            <div class="text-black font-black text-xl">VS</div>
           </div>
         </div>
       </div>
